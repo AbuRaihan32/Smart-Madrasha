@@ -1,7 +1,8 @@
 import React from "react";
+import Slider from "./Slider";
 
 const Banner = () => {
-  return <div>this is banner</div>;
+  return <Slider></Slider>;
 };
 
 export default Banner;
