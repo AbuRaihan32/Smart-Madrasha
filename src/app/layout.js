@@ -26,7 +26,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <main className="">
+          <nav className="z-50 sticky top-0">
           <Navbar></Navbar>
+          </nav>
           {children}
           <Footer></Footer>
         </main>
