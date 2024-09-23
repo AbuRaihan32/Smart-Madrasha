@@ -13,7 +13,7 @@ const Banner = () => {
             <h1 className="text-5xl font-bold mb-1">Biddyanoy.com</h1>
             <p>Educational institution management service</p>
           </div>
-          <p className="mb-5">
+          <p className="mb-5 text-justify">
             Biddyanoy.com is an educational institution management service to
             help institutes for save their time and improve management system.
             It is a simple yet powerful one point integrated platform that
