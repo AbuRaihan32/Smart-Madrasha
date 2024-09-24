@@ -22,34 +22,34 @@ const Account = () => {
             Accounts Management
           </h2>
 
-          <ul className="mt-4 space-y-2">
+          <ul className="mt-4 space-y-3">
             <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
               <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-              <span> Attendance Display System</span>
+              <span> Easy Step Payment Collection</span>
             </li>
             <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
               <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-              <span> Student, Teacher & Staff Report</span>
+              <span>Income & Expense Report</span>
             </li>
             <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
               <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-              <span> Entry SMS Confirmation</span>
+              <span> Accounts Summary</span>
             </li>
             <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
               <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-              <span> Exit SMS Confirmation</span>
+              <span>Daily,Monthly,Yearly Analysis</span>
             </li>
             <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
               <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-              <span> Late SMS</span>
+              <span>Paid Notification by SMS</span>
             </li>
             <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
               <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-              <span> Absent And Bunk SMS</span>
+              <span>Due Notification by SMS</span>
             </li>
             <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
               <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-              <span> Manage Schedule</span>
+              <span>Online Money Receipt</span>
             </li>
           </ul>
         </div>

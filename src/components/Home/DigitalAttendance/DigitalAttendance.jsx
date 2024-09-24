@@ -22,7 +22,7 @@ const DigitalAttendance = () => {
             Digital Attendance System
           </h2>
 
-          <ul className="mt-4 space-y-2">
+          <ul className="mt-4 space-y-3">
             <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
               <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
               <span> Attendance Display System</span>

@@ -4,7 +4,7 @@ import { RiCheckboxCircleFill } from "react-icons/ri";
 
 const Exam = () => {
   return (
-    <section className="bg-slate-50 py-5 mb-10">
+    <section className="bg-slate-50 py-5 ">
       <div className="max-w-6xl mx-auto py-8">
         <div className=" w-[94%] mx-auto flex items-center flex-row-reverse">
           <div className="w-full">
@@ -23,7 +23,7 @@ const Exam = () => {
               Exam Management
             </h2>
 
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 space-y-3">
               <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px]">
                 <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
                 <span> Flexible Setting</span>

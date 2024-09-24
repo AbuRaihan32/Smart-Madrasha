@@ -7,13 +7,13 @@ import StudentReport from "@/components/Home/StudentReport/StudentReport";
 
 export default function Home() {
   return (
-    <>
+    <div className="space-y-10 mb-10">
       <Banner></Banner>
       <Overview></Overview>
       <DigitalAttendance></DigitalAttendance>
       <Exam></Exam>
       <Account></Account>
       <StudentReport></StudentReport>
-    </>
+    </div>
   );
 }
