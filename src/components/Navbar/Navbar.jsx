@@ -1,8 +1,10 @@
+"use client";
 import Link from "next/link";
 import React from "react";
-import { AiOutlineLogin } from "react-icons/ai";
+import { AiOutlineLogin, AiOutlineLogout } from "react-icons/ai";
 
 const Navbar = () => {
+  const user = true;
   const navLinks = (
     <>
       <li>
@@ -54,21 +56,39 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <a
-            href={"/login"}
-            class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group"
-          >
-            <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-100 group-hover:h-full"></span>
-            <span class="absolute right-1 pr-4 duration-200 ease-out group-hover:translate-x-12">
-              <AiOutlineLogin size={22}></AiOutlineLogin>
-            </span>
-            <span class="absolute left-1 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-            <AiOutlineLogin color="#0098A8" size={22}></AiOutlineLogin>
-            </span>
-            <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-[#0098A8] ">
-              Sign In
-            </span>
-          </a>
+          {user ? (
+            <button
+              onClick={() => alert("Logged Out")}
+              class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group"
+            >
+              <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-100 group-hover:h-full"></span>
+              <span class="absolute right-1 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                <AiOutlineLogout size={22}></AiOutlineLogout>
+              </span>
+              <span class="absolute left-1 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                <AiOutlineLogout color="#0098A8" size={22}></AiOutlineLogout>
+              </span>
+              <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-[#0098A8] ">
+                Sign Out
+              </span>
+            </button>
+          ) : (
+            <Link
+              href={"/login"}
+              class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group"
+            >
+              <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-100 group-hover:h-full"></span>
+              <span class="absolute right-1 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                <AiOutlineLogin size={22}></AiOutlineLogin>
+              </span>
+              <span class="absolute left-1 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                <AiOutlineLogin color="#0098A8" size={22}></AiOutlineLogin>
+              </span>
+              <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-[#0098A8] ">
+                Sign In
+              </span>
+            </Link>
+          )}
         </div>
       </div>
     </div>
