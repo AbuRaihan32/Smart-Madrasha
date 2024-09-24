@@ -2,7 +2,7 @@ import React from "react";
 
 const Overview = () => {
   return (
-    <section className="bg-slate-50 mb-11">
+    <section className="bg-slate-50">
       <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
