@@ -6,19 +6,20 @@ const DigitalAttendance = () => {
   return (
     <section className="max-w-6xl mx-auto py-8">
       <div className=" w-[94%] mx-auto flex items-center ">
-        {/* Image Section */}
         <div className="w-full">
           <img
-            src="/Attendance.png" // Replace this with your actual image path
+            src="/Attendance.png"
             alt="Digital Attendance System"
             className="w-96 mx-auto"
           />
         </div>
 
-        {/* Text Section */}
         <div className="w-full">
           <h2 className="text-[#0098A8] text-2xl font-bold flex items-center">
-            <span className="mr-2"><FaBell></FaBell></span> Digital Attendance System
+            <span className="mr-2">
+              <FaBell></FaBell>
+            </span>{" "}
+            Digital Attendance System
           </h2>
 
           <ul className="mt-4 space-y-2">
