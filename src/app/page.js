@@ -1,3 +1,4 @@
+import Account from "@/components/Home/Account/Account";
 import Banner from "@/components/Home/Banner/Banner";
 import DigitalAttendance from "@/components/Home/DigitalAttendance/DigitalAttendance";
 import Exam from "@/components/Home/Exam/Exam";
@@ -11,6 +12,7 @@ export default function Home() {
       <Overview></Overview>
       <DigitalAttendance></DigitalAttendance>
       <Exam></Exam>
+      <Account></Account>
       <StudentReport></StudentReport>
     </>
   );

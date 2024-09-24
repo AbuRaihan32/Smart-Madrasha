@@ -3,12 +3,11 @@ import { MdOutlineMenuBook } from "react-icons/md";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import { GrDocumentUser } from "react-icons/gr";
 
-
 const StudentReport = () => {
   return (
     <section className="bg-slate-50 py-5 mb-10">
       <div className="max-w-6xl mx-auto py-8">
-        <div className=" w-[94%] mx-auto flex items-center">
+        <div className=" w-[94%] mx-auto flex items-center flex-row-reverse">
           <div className="w-full">
             <img
               src="/StudentReport.png"
@@ -28,19 +27,19 @@ const StudentReport = () => {
             <ul className="mt-4 space-y-2">
               <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px]">
                 <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-                <span> Flexible Setting</span>
+                <span> Attendance Activities</span>
               </li>
               <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px]">
                 <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-                <span> Easy to Modify</span>
+                <span> Exam Report</span>
               </li>
               <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px]">
                 <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-                <span> Result By SMS</span>
+                <span>Accounts Activities</span>
               </li>
               <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px]">
                 <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
-                <span> Smart Result Card</span>
+                <span> Reporting</span>
               </li>
             </ul>
           </div>

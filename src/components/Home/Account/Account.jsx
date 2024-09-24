@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBell } from "react-icons/fa";
+import { FaMoneyBill1Wave } from "react-icons/fa6";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 
 const Account = () => {
@@ -8,7 +8,7 @@ const Account = () => {
       <div className=" w-[94%] mx-auto flex items-center ">
         <div className="w-full">
           <img
-            src="/Attendance.png"
+            src="/Accounts.png"
             alt="Digital Attendance System"
             className="w-96 mx-auto"
           />
@@ -17,9 +17,9 @@ const Account = () => {
         <div className="w-full">
           <h2 className="text-[#0098A8] text-2xl font-bold flex items-center">
             <span className="mr-2">
-              <FaBell></FaBell>
+              <FaMoneyBill1Wave></FaMoneyBill1Wave>
             </span>{" "}
-            Digital Attendance System
+            Accounts Management
           </h2>
 
           <ul className="mt-4 space-y-2">
