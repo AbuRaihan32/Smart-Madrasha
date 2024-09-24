@@ -1,15 +1,17 @@
 import React from "react";
 import { MdOutlineMenuBook } from "react-icons/md";
 import { RiCheckboxCircleFill } from "react-icons/ri";
+import { GrDocumentUser } from "react-icons/gr";
 
-const Exam = () => {
+
+const StudentReport = () => {
   return (
     <section className="bg-slate-50 py-5 mb-10">
       <div className="max-w-6xl mx-auto py-8">
-        <div className=" w-[94%] mx-auto flex items-center flex-row-reverse">
+        <div className=" w-[94%] mx-auto flex items-center">
           <div className="w-full">
             <img
-              src="/Exam.png"
+              src="/StudentReport.png"
               alt="Digital Attendance System"
               className="w-96 mx-auto"
             />
@@ -18,9 +20,9 @@ const Exam = () => {
           <div className="w-full">
             <h2 className="text-[#0098A8] text-2xl font-bold flex items-center">
               <span className="mr-2">
-                <MdOutlineMenuBook></MdOutlineMenuBook>
+                <GrDocumentUser></GrDocumentUser>
               </span>{" "}
-              Exam Management
+              Student Report
             </h2>
 
             <ul className="mt-4 space-y-2">
@@ -48,4 +50,4 @@ const Exam = () => {
   );
 };
 
-export default Exam;
+export default StudentReport;
