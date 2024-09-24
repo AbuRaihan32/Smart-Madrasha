@@ -17,7 +17,12 @@ const Overview = () => {
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 md:grid-cols-3">
-          <div className="flex flex-col rounded-lg border bg-white border-gray-100 px-4 py-8 text-center shadow-md hover:shadow-lg">
+          <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="600"
+            className="flex flex-col rounded-lg border bg-white border-gray-100 px-4 py-8 text-center shadow-md hover:shadow-lg"
+          >
             <img
               src="/Institution.png"
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
@@ -33,7 +38,12 @@ const Overview = () => {
             </div>
           </div>
 
-          <div className="flex flex-col rounded-lg border bg-white border-gray-100 px-4 py-8 text-center shadow-md hover:shadow-lg">
+          <div
+            data-aos="flip-up"
+            data-aos-easing="linear"
+            data-aos-duration="600"
+            className="flex flex-col rounded-lg border bg-white border-gray-100 px-4 py-8 text-center shadow-md hover:shadow-lg"
+          >
             <img
               src="/Students1.png"
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
@@ -48,7 +58,12 @@ const Overview = () => {
             </div>
           </div>
 
-          <div className="flex flex-col rounded-lg bg-white border border-gray-100 px-4 py-8 text-center shadow-md hover:shadow-lg">
+          <div
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="600"
+            className="flex flex-col rounded-lg bg-white border border-gray-100 px-4 py-8 text-center shadow-md hover:shadow-lg"
+          >
             <img
               src="/Teachers.png"
               className="w-24 h-24 mx-auto mb-2 border rounded-full"

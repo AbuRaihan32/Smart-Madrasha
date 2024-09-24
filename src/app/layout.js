@@ -18,6 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      </head>
       <body>
         <main className={`${inter.className} ${ubuntu.className}`}>
           <nav className="z-50 sticky top-0">
@@ -26,6 +29,8 @@ export default function RootLayout({ children }) {
           {children}
           <Footer></Footer>
         </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
       </body>
     </html>
   );
