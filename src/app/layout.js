@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import { Inter, Ubuntu } from "next/font/google";
+import AOSInitializer from "@/components/AOSInitializer/AOSInitializer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      </head>
       <body>
+        <AOSInitializer></AOSInitializer>
         <main className={`${inter.className} ${ubuntu.className}`}>
           <nav className="z-50 sticky top-0">
             <Navbar></Navbar>
@@ -29,8 +28,6 @@ export default function RootLayout({ children }) {
           {children}
           <Footer></Footer>
         </main>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>AOS.init();</script>
       </body>
     </html>
   );
