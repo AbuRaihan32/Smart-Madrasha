@@ -3,12 +3,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-base-200">
-      <div className="footer max-w-6xl mx-auto text-base-content p-10">
+    <footer className="bg-[#0098A8]">
+      <div className="footer max-w-6xl mx-auto  p-10 text-white">
         <div className=" flex flex-col items-center text-center">
           <Link href="/">
             {" "}
-            <img src={"/logo-black.png"} width={120} alt="logo" />{" "}
+            <img src={"/logo-white.png"} width={120} alt="logo" />{" "}
           </Link>
           <p>
             ACME Industries Ltd.
