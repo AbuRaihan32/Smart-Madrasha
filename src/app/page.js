@@ -4,6 +4,7 @@ import DigitalAttendance from "@/components/Home/DigitalAttendance/DigitalAttend
 import Exam from "@/components/Home/Exam/Exam";
 import Overview from "@/components/Home/Overview/Overview";
 import StudentReport from "@/components/Home/StudentReport/StudentReport";
+import Testimonials from "@/components/Home/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Exam></Exam>
       <Account></Account>
       <StudentReport></StudentReport>
+      <Testimonials></Testimonials>
     </div>
   );
 }
