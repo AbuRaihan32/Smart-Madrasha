@@ -33,15 +33,15 @@ export default function Testimonials() {
       >
         <SwiperSlide>
           <div className="text-center">
-            <blockquote class="flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:py-12 lg:px-24">
+            <blockquote class="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
                 <div class="flex gap-0.5 text-green-500">
-                  <img src="" alt="" />
+                  <img src="/Avatar.png" alt="profile" className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8]"/>
                 </div>
 
                 <div class="mt-4">
                   <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
-                    Stayin' Alive
+                    Umme Rufaida
                   </p>
 
                   <p class="mt-4 leading-relaxed text-gray-700">
@@ -54,22 +54,22 @@ export default function Testimonials() {
               </div>
 
               <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                &mdash; Michael Scott
+                &mdash; Markazul Quran Madrasha
               </footer>
             </blockquote>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="text-center">
-            <blockquote class="flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:py-12 lg:px-24">
+            <blockquote class="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
                 <div class="flex gap-0.5 text-green-500">
-                  <img src="" alt="" />
+                  <img src="/Avatar.png" alt="profile" className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8]"/>
                 </div>
 
                 <div class="mt-4">
                   <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
-                    Stayin' Alive
+                    Umme Rufaida
                   </p>
 
                   <p class="mt-4 leading-relaxed text-gray-700">
@@ -82,7 +82,63 @@ export default function Testimonials() {
               </div>
 
               <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                &mdash; Michael Scott
+                &mdash; Markazul Quran Madrasha
+              </footer>
+            </blockquote>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="text-center">
+            <blockquote class="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
+              <div>
+                <div class="flex gap-0.5 text-green-500">
+                  <img src="/Avatar.png" alt="profile" className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8]"/>
+                </div>
+
+                <div class="mt-4">
+                  <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                    Umme Rufaida
+                  </p>
+
+                  <p class="mt-4 leading-relaxed text-gray-700">
+                    No, Rose, they are not breathing. And they have no arms or
+                    legs … Where are they? You know what? If we come across
+                    somebody with no arms or legs, do we bother resuscitating
+                    them? I mean, what quality of life do we have there?
+                  </p>
+                </div>
+              </div>
+
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; Markazul Quran Madrasha
+              </footer>
+            </blockquote>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="text-center">
+            <blockquote class="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
+              <div>
+                <div class="flex gap-0.5 text-green-500">
+                  <img src="/Avatar.png" alt="profile" className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8]"/>
+                </div>
+
+                <div class="mt-4">
+                  <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                    Umme Rufaida
+                  </p>
+
+                  <p class="mt-4 leading-relaxed text-gray-700">
+                    No, Rose, they are not breathing. And they have no arms or
+                    legs … Where are they? You know what? If we come across
+                    somebody with no arms or legs, do we bother resuscitating
+                    them? I mean, what quality of life do we have there?
+                  </p>
+                </div>
+              </div>
+
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; Markazul Quran Madrasha
               </footer>
             </blockquote>
           </div>
