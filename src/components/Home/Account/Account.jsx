@@ -7,17 +7,19 @@ const Account = () => {
     <section className="max-w-6xl mx-auto">
       <div className=" w-[94%] mx-auto flex items-center ">
         <div className="w-full">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player
-            src="https://lottie.host/6b7886ab-c8f1-410d-bafe-22b19e8af83d/bXyRRGxeJL.json"
-            background="##FFFFFF"
-            speed="1"
-            className="width: 300px; height: 300px"
-            loop
-            autoplay
-            direction="1"
-            mode="normal"
-          ></lottie-player>
+          <div className="w-[80%]">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://lottie.host/6b7886ab-c8f1-410d-bafe-22b19e8af83d/bXyRRGxeJL.json"
+              background="##FFFFFF"
+              speed="1"
+              className="width: 250px; height: 250px"
+              loop
+              autoplay
+              direction="1"
+              mode="normal"
+            ></lottie-player>
+          </div>
         </div>
 
         <div className="w-full">
