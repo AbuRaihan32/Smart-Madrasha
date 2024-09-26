@@ -7,13 +7,13 @@ const Account = () => {
     <section className="max-w-6xl mx-auto">
       <div className=" w-[94%] mx-auto flex items-center ">
         <div className="w-full">
-          <div className="w-[80%]">
+          <div className="w-[80%] mx-auto">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player
-              src="https://lottie.host/6b7886ab-c8f1-410d-bafe-22b19e8af83d/bXyRRGxeJL.json"
-              background="##FFFFFF"
+              src="https://lottie.host/3127308b-96c3-470e-9055-c77edeadad19/3gsKIt4xeo.json"
+              background="##fff"
               speed="1"
-              className="width: 250px; height: 250px"
+              className="width: 300px; height: 300px"
               loop
               autoplay
               direction="1"

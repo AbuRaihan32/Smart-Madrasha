@@ -2,18 +2,18 @@ import React from "react";
 import { MdOutlineMenuBook } from "react-icons/md";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import { GrDocumentUser } from "react-icons/gr";
+import LottieFile from "@/components/Shared/LottieFile";
+import Report from "../../../../public/Report.json";
 
 const StudentReport = () => {
   return (
-    <section className="bg-slate-50 py-5">
-      <div className="max-w-6xl mx-auto py-8">
+    <section className="bg-slate-50">
+      <div className="max-w-6xl mx-auto">
         <div className=" w-[94%] mx-auto flex items-center flex-row-reverse">
           <div className="w-full">
-            <img
-              src="/StudentReport.png"
-              alt="Digital Attendance System"
-              className="w-96 mx-auto"
-            />
+            <div className="w-[80%] mx-auto">
+            <LottieFile data={Report}></LottieFile>
+            </div>
           </div>
 
           <div className="w-full">
