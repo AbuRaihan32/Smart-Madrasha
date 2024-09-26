@@ -1,8 +1,8 @@
 import "./globals.css";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
 import { Inter, Ubuntu } from "next/font/google";
 import AOSInitializer from "@/components/AOSInitializer/AOSInitializer";
+import Navbar from "@/components/Shared/Navbar";
+import Footer from "@/components/Shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
