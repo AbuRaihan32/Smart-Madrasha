@@ -6,6 +6,7 @@ import Location from "@/components/Home/Location/Location";
 import Overview from "@/components/Home/Overview/Overview";
 import StudentReport from "@/components/Home/StudentReport/StudentReport";
 import Testimonials from "@/components/Home/Testimonials/Testimonials";
+import ScrollToTopButton from "@/components/Shared/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <StudentReport></StudentReport>
       <Testimonials></Testimonials>
       <Location></Location>
+      <ScrollToTopButton></ScrollToTopButton>
     </div>
   );
 }

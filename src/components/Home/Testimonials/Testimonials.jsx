@@ -39,7 +39,7 @@ export default function Testimonials() {
                   <img
                     src="/Avatar.png"
                     alt="profile"
-                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8]"
+                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"
                   />
                 </div>
 
@@ -54,7 +54,7 @@ export default function Testimonials() {
               </div>
 
               <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
@@ -70,7 +70,7 @@ export default function Testimonials() {
                   <img
                     src="/Avatar.png"
                     alt="profile"
-                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8]"
+                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"
                   />
                 </div>
 
@@ -85,7 +85,7 @@ export default function Testimonials() {
               </div>
 
               <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
@@ -101,7 +101,7 @@ export default function Testimonials() {
                   <img
                     src="/Avatar.png"
                     alt="profile"
-                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8]"
+                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"
                   />
                 </div>
 
@@ -116,7 +116,7 @@ export default function Testimonials() {
               </div>
 
               <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
@@ -132,7 +132,7 @@ export default function Testimonials() {
                   <img
                     src="/Avatar.png"
                     alt="profile"
-                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8]"
+                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"
                   />
                 </div>
 
@@ -147,7 +147,7 @@ export default function Testimonials() {
               </div>
 
               <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
@@ -163,7 +163,7 @@ export default function Testimonials() {
                   <img
                     src="/Avatar.png"
                     alt="profile"
-                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8]"
+                    className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"
                   />
                 </div>
 
@@ -178,7 +178,7 @@ export default function Testimonials() {
               </div>
 
               <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
