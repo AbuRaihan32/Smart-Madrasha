@@ -9,8 +9,8 @@ const Account = () => {
         <div className="w-full">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player
-            src="https://lottie.host/ef34fb69-36e4-493a-b81f-bb9cdcbfa28b/Tv0SUt3Kfx.json"
-            background="##fff"
+            src="https://lottie.host/6b7886ab-c8f1-410d-bafe-22b19e8af83d/bXyRRGxeJL.json"
+            background="##FFFFFF"
             speed="1"
             className="width: 300px; height: 300px"
             loop
