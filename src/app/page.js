@@ -1,6 +1,7 @@
 import Account from "@/components/Home/Account/Account";
 import Banner from "@/components/Home/Banner/Banner";
-import ContactUs from "@/components/Home/Contact/ContactUs";
+import Location from "@/components/Home/Contact/Location";
+import Message from "@/components/Home/Contact/Message";
 import DigitalAttendance from "@/components/Home/DigitalAttendance/DigitalAttendance";
 import Exam from "@/components/Home/Exam/Exam";
 import Overview from "@/components/Home/Overview/Overview";
@@ -18,7 +19,10 @@ export default function Home() {
       <Account></Account>
       <StudentReport></StudentReport>
       <Testimonials></Testimonials>
-      <ContactUs></ContactUs>
+      <div>
+        <Location></Location>
+        <Message></Message>
+      </div>
       <ScrollToTopButton></ScrollToTopButton>
     </div>
   );
