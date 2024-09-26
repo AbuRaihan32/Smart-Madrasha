@@ -40,6 +40,7 @@ const Message = () => {
     if (validateForm()) {
       // Handle form submission
       alert("Form submitted successfully!");
+      console.log(formData)
     }
   };
 

@@ -33,9 +33,9 @@ export default function Testimonials() {
       >
         <SwiperSlide>
           <div className="text-center">
-            <blockquote class="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
+            <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
-                <div class="">
+                <div className="">
                   <img
                     src="/Avatar.png"
                     alt="profile"
@@ -43,8 +43,8 @@ export default function Testimonials() {
                   />
                 </div>
 
-                <div class="mt-4">
-                  <p class="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                <div className="mt-4">
+                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -53,8 +53,8 @@ export default function Testimonials() {
                 </div>
               </div>
 
-              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
+              <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                <p className="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
@@ -64,9 +64,9 @@ export default function Testimonials() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="text-center">
-            <blockquote class="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
+            <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
-                <div class="">
+                <div className="">
                   <img
                     src="/Avatar.png"
                     alt="profile"
@@ -74,8 +74,8 @@ export default function Testimonials() {
                   />
                 </div>
 
-                <div class="mt-4">
-                  <p class="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                <div className="mt-4">
+                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -84,8 +84,8 @@ export default function Testimonials() {
                 </div>
               </div>
 
-              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
+              <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                <p className="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
@@ -95,9 +95,9 @@ export default function Testimonials() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="text-center">
-            <blockquote class="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
+            <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
-                <div class="">
+                <div className="">
                   <img
                     src="/Avatar.png"
                     alt="profile"
@@ -105,8 +105,8 @@ export default function Testimonials() {
                   />
                 </div>
 
-                <div class="mt-4">
-                  <p class="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                <div className="mt-4">
+                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -115,8 +115,8 @@ export default function Testimonials() {
                 </div>
               </div>
 
-              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
+              <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                <p className="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
@@ -126,9 +126,9 @@ export default function Testimonials() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="text-center">
-            <blockquote class="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
+            <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
-                <div class="">
+                <div className="">
                   <img
                     src="/Avatar.png"
                     alt="profile"
@@ -136,8 +136,8 @@ export default function Testimonials() {
                   />
                 </div>
 
-                <div class="mt-4">
-                  <p class="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                <div className="mt-4">
+                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -146,8 +146,8 @@ export default function Testimonials() {
                 </div>
               </div>
 
-              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
+              <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                <p className="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
@@ -157,9 +157,9 @@ export default function Testimonials() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="text-center">
-            <blockquote class="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
+            <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
-                <div class="">
+                <div className="">
                   <img
                     src="/Avatar.png"
                     alt="profile"
@@ -167,8 +167,8 @@ export default function Testimonials() {
                   />
                 </div>
 
-                <div class="mt-4">
-                  <p class="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                <div className="mt-4">
+                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -177,8 +177,8 @@ export default function Testimonials() {
                 </div>
               </div>
 
-              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                <p class="text-2xl font-bold text-[#0098A8] sm:text-3xl">
+              <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                <p className="text-2xl font-bold text-[#0098A8] sm:text-3xl">
                   Umme Rufaida
                 </p>
                 &mdash; Markazul Quran Madrasha
