@@ -1,6 +1,6 @@
 import Account from "@/components/Home/Account/Account";
 import Banner from "@/components/Home/Banner/Banner";
-import Location from "@/components/Home/Contact/Location";
+import ContactUs from "@/components/Home/Contact/ContactUs";
 import DigitalAttendance from "@/components/Home/DigitalAttendance/DigitalAttendance";
 import Exam from "@/components/Home/Exam/Exam";
 import Overview from "@/components/Home/Overview/Overview";
@@ -10,7 +10,7 @@ import ScrollToTopButton from "@/components/Shared/ScrollToTopButton";
 
 export default function Home() {
   return (
-    <div className="space-y-10 mb-10">
+    <div className="space-y-10">
       <Banner></Banner>
       <Overview></Overview>
       <DigitalAttendance></DigitalAttendance>
@@ -18,7 +18,7 @@ export default function Home() {
       <Account></Account>
       <StudentReport></StudentReport>
       <Testimonials></Testimonials>
-      <Location></Location>
+      <ContactUs></ContactUs>
       <ScrollToTopButton></ScrollToTopButton>
     </div>
   );

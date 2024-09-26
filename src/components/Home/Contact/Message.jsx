@@ -1,5 +1,10 @@
-'use client'
+"use client";
+import Button from "@/components/Shared/Button";
 import React, { useState } from "react";
+import { FaMobileRetro, FaUser } from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
+import { MdLocationPin } from "react-icons/md";
+import { TfiWorld } from "react-icons/tfi";
 
 const Message = () => {
   const [formData, setFormData] = useState({
@@ -40,116 +45,127 @@ const Message = () => {
     if (validateForm()) {
       // Handle form submission
       alert("Form submitted successfully!");
-      console.log(formData)
+      console.log(formData);
     }
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact us</h2>
-      <div className="grid md:grid-cols-2 gap-6">
-        <form onSubmit={handleSubmit} className="space-y-4">
+    <section className="max-w-6xl mx-auto px-4 py-6 ">
+      <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact US</h2>
+      <div className="grid md:grid-cols-4 gap-6">
+        <form onSubmit={handleSubmit} className="space-y-4 col-span-3">
           <div className="grid grid-cols-2 gap-4">
             <div>
+              Name :{" "}
+              {errors.name && <span className="text-red-500 text-sm">*</span>}
               <input
                 type="text"
                 name="name"
                 placeholder="Your name"
-                className={`w-full p-2 border ${
-                  errors.name ? "border-red-500" : "border-gray-300"
-                } rounded-md`}
+                className={`w-full p-2 border outline-none rounded-md `}
                 value={formData.name}
                 onChange={handleInputChange}
               />
-              {errors.name && <span className="text-red-500 text-sm">*</span>}
             </div>
             <div>
+              Email :{" "}
+              {errors.email && <span className="text-red-500 text-sm">*</span>}
               <input
                 type="email"
                 name="email"
                 placeholder="Your email"
-                className={`w-full p-2 border ${
-                  errors.email ? "border-red-500" : "border-gray-300"
-                } rounded-md`}
+                className={`w-full p-2 border outline-none rounded-md`}
                 value={formData.email}
                 onChange={handleInputChange}
               />
-              {errors.email && <span className="text-red-500 text-sm">*</span>}
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div>
+              Subject :{" "}
+              {errors.subject && (
+                <span className="text-red-500 text-sm">*</span>
+              )}
               <input
                 type="text"
                 name="subject"
                 placeholder="Subject"
-                className={`w-full p-2 border ${
-                  errors.subject ? "border-red-500" : "border-gray-300"
-                } rounded-md`}
+                className={`w-full p-2 border outline-none rounded-md`}
                 value={formData.subject}
                 onChange={handleInputChange}
               />
-              {errors.subject && (
-                <span className="text-red-500 text-sm">*</span>
-              )}
             </div>
             <div>
+              Mobile No :{" "}
+              {errors.mobile && <span className="text-red-500 text-sm">*</span>}
               <input
                 type="text"
                 name="mobile"
                 placeholder="Mobile number"
-                className={`w-full p-2 border ${
-                  errors.mobile ? "border-red-500" : "border-gray-300"
-                } rounded-md`}
+                className={`w-full p-2 border outline-none rounded-md`}
                 value={formData.mobile}
                 onChange={handleInputChange}
               />
-              {errors.mobile && <span className="text-red-500 text-sm">*</span>}
             </div>
           </div>
 
           <div>
+            Message :{" "}
+            {errors.message && <span className="text-red-500 text-sm">*</span>}
             <textarea
               name="message"
               placeholder="Your message"
-              className={`w-full p-2 border ${
-                errors.message ? "border-red-500" : "border-gray-300"
-              } rounded-md h-32`}
+              className={`w-full p-2 border outline-none  rounded-md`}
               value={formData.message}
               onChange={handleInputChange}
+              rows={'2'}
             ></textarea>
-            {errors.message && <span className="text-red-500 text-sm">*</span>}
           </div>
 
-          <button
-            type="submit"
-            className="bg-green-500 text-white px-4 py-2 rounded-md"
-          >
-            SEND
-          </button>
+          <Button text={"Send"}></Button>
         </form>
 
-        <div className="space-y-4">
+        <div className="space-y-4 mt-5">
           {/* Contact information section */}
           <div className="flex items-center">
-            <p className="ml-2">Loops IT Ltd.</p>
+            <p className="ml-2 flex items-center gap-2">
+              <FaUser color="#0098A8"></FaUser> <span>Abu Rayhan Mahfuj</span>
+            </p>
           </div>
 
           <div className="flex items-center">
-            <p className="ml-2">328, East Nakhal Para, Tejgaon, Dhaka 1215</p>
+            <p className="ml-2 flex items-center gap-2">
+              <MdLocationPin size={25} color="#0098A8"></MdLocationPin> Markazul
+              Quran Madrasha, Aditmari, Lalmonirhat.
+            </p>
           </div>
 
           <div className="flex items-center">
-            <p className="ml-2">09638 66 99 66</p>
+            <p className="ml-2 flex items-center gap-2">
+              {" "}
+              <FaMobileRetro color="#0098A8"></FaMobileRetro>{" "}
+              <span>+8801719107678</span>
+            </p>
           </div>
 
           <div className="flex items-center">
-            <p className="ml-2">info@loopsit.com</p>
+            <p className="ml-2 flex items-center gap-2">
+              <HiOutlineMail color="#0098A8"></HiOutlineMail>{" "}
+              <span>ar.mahfuj.dev@gmail.com</span>
+            </p>
           </div>
 
           <div className="flex items-center">
-            <p className="ml-2">www.loopsit.com</p>
+            <p className="ml-2 flex items-center gap-2">
+              {" "}
+              <TfiWorld color="#0098A8"></TfiWorld>{" "}
+              <span>
+                <a href="https://portfolio-gilt-omega-44.vercel.app">
+                  www.abu-rufaida.com
+                </a>
+              </span>
+            </p>
           </div>
 
           <div>

@@ -1,7 +1,7 @@
 import React from "react";
 import table from '../../../../public/table.json'
-import Button from "@/components/Button/Button";
 import LottieFile from "@/components/Shared/LottieFile";
+import Button from "@/components/Shared/Button";
 
 const Banner = () => {
   return (
