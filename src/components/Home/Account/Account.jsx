@@ -1,17 +1,15 @@
+import LottieFile from "@/components/Shared/LottieFile";
 import React from "react";
 import { FaMoneyBill1Wave } from "react-icons/fa6";
 import { RiCheckboxCircleFill } from "react-icons/ri";
+import Acc from "../../../../public/Accounts.json";
 
 const Account = () => {
   return (
     <section className="max-w-6xl mx-auto py-8">
       <div className=" w-[94%] mx-auto flex items-center ">
         <div className="w-full">
-          <img
-            src="/Accounts.png"
-            alt="Digital Attendance System"
-            className="w-96 mx-auto"
-          />
+          <LottieFile data={Acc}></LottieFile>
         </div>
 
         <div className="w-full">

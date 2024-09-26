@@ -1,6 +1,7 @@
-import React from "react";
 import { MdOutlineMenuBook } from "react-icons/md";
 import { RiCheckboxCircleFill } from "react-icons/ri";
+import exam from "../../../../public/Exam.json";
+import LottieFile from "@/components/Shared/LottieFile";
 
 const Exam = () => {
   return (
@@ -8,11 +9,7 @@ const Exam = () => {
       <div className="max-w-6xl mx-auto py-8">
         <div className=" w-[94%] mx-auto flex items-center flex-row-reverse">
           <div className="w-full">
-            <img
-              src="/Exam.png"
-              alt="Digital Attendance System"
-              className="w-96 mx-auto"
-            />
+            <LottieFile data={exam}></LottieFile>
           </div>
 
           <div className="w-full">

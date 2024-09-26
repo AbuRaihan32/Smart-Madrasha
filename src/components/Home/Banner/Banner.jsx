@@ -1,8 +1,7 @@
-'use client'
-import Lottie from "lottie-react";
 import React from "react";
 import table from '../../../../public/table.json'
 import Button from "@/components/Button/Button";
+import LottieFile from "@/components/Shared/LottieFile";
 
 const Banner = () => {
   return (
@@ -27,7 +26,7 @@ const Banner = () => {
           <Button text={'Contact US'} link={'/'}></Button>
         </div>
         <div>
-          <Lottie animationData={table}></Lottie>
+          <LottieFile data={table}></LottieFile>
         </div>
       </div>
     </div>

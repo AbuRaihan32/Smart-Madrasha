@@ -1,17 +1,15 @@
+import LottieFile from "@/components/Shared/LottieFile";
 import React from "react";
 import { FaBell } from "react-icons/fa";
 import { RiCheckboxCircleFill } from "react-icons/ri";
+import Att from "../../../../public/Attendance.json";
 
 const DigitalAttendance = () => {
   return (
     <section className="max-w-6xl mx-auto py-8">
       <div className=" w-[94%] mx-auto flex items-center ">
         <div className="w-full">
-          <img
-            src="/Attendance.png"
-            alt="Digital Attendance System"
-            className="w-96 mx-auto"
-          />
+          <LottieFile data={Att}></LottieFile>
         </div>
 
         <div className="w-full">
