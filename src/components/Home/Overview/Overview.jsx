@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Overview = () => {
@@ -23,7 +24,7 @@ const Overview = () => {
             data-aos-duration="600"
             className="flex flex-col rounded-lg border bg-white border-gray-100 px-4 py-8 text-center shadow-md hover:shadow-lg"
           >
-            <img
+            <Image
               src="/Institution.png"
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
               alt="institution"
@@ -44,7 +45,7 @@ const Overview = () => {
             data-aos-duration="600"
             className="flex flex-col rounded-lg border bg-white border-gray-100 px-4 py-8 text-center shadow-md hover:shadow-lg"
           >
-            <img
+            <Image
               src="/Students1.png"
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
               alt="Students"
@@ -64,7 +65,7 @@ const Overview = () => {
             data-aos-duration="600"
             className="flex flex-col rounded-lg bg-white border border-gray-100 px-4 py-8 text-center shadow-md hover:shadow-lg"
           >
-            <img
+            <Image
               src="/Teachers.png"
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
               alt="Teachers"

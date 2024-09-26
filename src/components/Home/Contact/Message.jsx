@@ -1,5 +1,6 @@
 "use client";
 import Button from "@/components/Shared/Button";
+import Image from "next/image";
 import React, { useState } from "react";
 import { FaMobileRetro, FaUser } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
@@ -176,7 +177,7 @@ const Message = () => {
             </div>
 
             <div>
-              <img
+              <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                 alt="Google Play"
                 className="w-36"

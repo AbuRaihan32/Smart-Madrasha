@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Image from "next/image";
 
 
 export default function Testimonials() {
@@ -31,7 +32,7 @@ export default function Testimonials() {
             <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
                 <div className="">
-                  <img
+                  <Image
                     src="/Avatar.png"
                     alt="profile"
                     className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"
@@ -62,7 +63,7 @@ export default function Testimonials() {
             <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
                 <div className="">
-                  <img
+                  <Image
                     src="/Avatar.png"
                     alt="profile"
                     className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"
@@ -93,7 +94,7 @@ export default function Testimonials() {
             <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
                 <div className="">
-                  <img
+                  <Image
                     src="/Avatar.png"
                     alt="profile"
                     className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"
@@ -124,7 +125,7 @@ export default function Testimonials() {
             <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
                 <div className="">
-                  <img
+                  <Image
                     src="/Avatar.png"
                     alt="profile"
                     className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"
@@ -155,7 +156,7 @@ export default function Testimonials() {
             <blockquote className="flex h-full flex-col justify-between p-6 sm:p-8 lg:py-12 lg:px-24">
               <div>
                 <div className="">
-                  <img
+                  <Image
                     src="/Avatar.png"
                     alt="profile"
                     className="mx-auto w-24 h-24 rounded-full p-1 bg-[#0098A8] hover:shadow-2xl"

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineLogin, AiOutlineLogout } from "react-icons/ai";
@@ -49,7 +50,7 @@ const Navbar = () => {
           </div>
           <Link href="/">
             {" "}
-            <img src={"/logo-white.png"} width={120} alt="logo" />{" "}
+            <Image src={"/logo-white.png"} width={120} alt="logo" />{" "}
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
