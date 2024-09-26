@@ -8,7 +8,7 @@ const Account = () => {
       <div className=" w-[94%] mx-auto flex items-center ">
         <div className="w-full">
           <div className="w-[80%] mx-auto">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async></script>
             <lottie-player
               src="https://lottie.host/3127308b-96c3-470e-9055-c77edeadad19/3gsKIt4xeo.json"
               background="##fff"
