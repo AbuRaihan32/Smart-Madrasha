@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
           <Link href="/">
             {" "}
-            <Image src={"/logo-white.png"} width={120} alt="logo" />{" "}
+            <Image src={"/logo-white.png"} width={120} height={50} alt="logo" />{" "}
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

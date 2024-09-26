@@ -26,6 +26,8 @@ const Overview = () => {
           >
             <Image
               src="/Institution.png"
+             width={90} 
+             height={90}
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
               alt="institution"
             />
@@ -47,6 +49,8 @@ const Overview = () => {
           >
             <Image
               src="/Students1.png"
+             width={90} 
+             height={90}
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
               alt="Students"
             />
@@ -67,6 +71,8 @@ const Overview = () => {
           >
             <Image
               src="/Teachers.png"
+             width={90} 
+             height={90}
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
               alt="Teachers"
             />

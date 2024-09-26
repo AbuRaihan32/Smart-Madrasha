@@ -179,6 +179,8 @@ const Message = () => {
             <div>
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                width={140}
+                height={40}
                 alt="Google Play"
                 className="w-36"
               />
