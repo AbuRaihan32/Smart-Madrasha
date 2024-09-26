@@ -1,21 +1,16 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { FaStar } from "react-icons/fa6";
+
 
 export default function Testimonials() {
   return (
-    <div className="max-w-5xl mx-auto">
+    <section className="max-w-5xl mx-auto">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -186,8 +181,7 @@ export default function Testimonials() {
             </blockquote>
           </div>
         </SwiperSlide>
-
       </Swiper>
-    </div>
+    </section>
   );
 }

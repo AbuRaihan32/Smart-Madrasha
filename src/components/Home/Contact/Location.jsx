@@ -3,7 +3,7 @@ import Message from "./Message";
 
 const Location = () => {
   return (
-    <div className="bg-slate-100 py-10 ">
+    <section className="bg-slate-100 py-10 ">
       <Message></Message>
       <div className=" max-w-6xl mx-auto flex justify-center mt-12 rounded-lg">
         <iframe
@@ -15,7 +15,7 @@ const Location = () => {
           title="Map of Markazul Quran Mohila Madrasha"
         ></iframe>
       </div>
-    </div>
+    </section>
   );
 };
 

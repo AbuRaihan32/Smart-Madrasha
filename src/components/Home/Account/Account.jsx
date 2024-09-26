@@ -9,7 +9,9 @@ const Account = () => {
     <section className="max-w-6xl mx-auto py-8">
       <div className=" w-[94%] mx-auto flex items-center ">
         <div className="w-full">
+          <div className="w-[75%] mx-auto">
           <LottieFile data={Acc}></LottieFile>
+          </div>
         </div>
 
         <div className="w-full">
