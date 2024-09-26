@@ -1,17 +1,23 @@
-import LottieFile from "@/components/Shared/LottieFile";
 import React from "react";
 import { FaMoneyBill1Wave } from "react-icons/fa6";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import Acc from "../../../../public/Accounts.json";
 
 const Account = () => {
   return (
-    <section className="max-w-6xl mx-auto py-8">
+    <section className="max-w-6xl mx-auto">
       <div className=" w-[94%] mx-auto flex items-center ">
         <div className="w-full">
-          <div className="w-[75%] mx-auto">
-          <LottieFile data={Acc}></LottieFile>
-          </div>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://lottie.host/ef34fb69-36e4-493a-b81f-bb9cdcbfa28b/Tv0SUt3Kfx.json"
+            background="##fff"
+            speed="1"
+            className="width: 300px; height: 300px"
+            loop
+            autoplay
+            direction="1"
+            mode="normal"
+          ></lottie-player>
         </div>
 
         <div className="w-full">
