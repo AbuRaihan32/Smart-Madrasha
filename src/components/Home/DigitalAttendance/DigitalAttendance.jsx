@@ -21,32 +21,32 @@ const DigitalAttendance = () => {
           </h2>
 
           <ul className="mt-4 space-y-3">
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span> Attendance Display System</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span> Student, Teacher & Staff Report</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span> Entry SMS Confirmation</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span> Exit SMS Confirmation</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span> Late SMS</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span> Absent And Bunk SMS</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span> Manage Schedule</span>
             </li>
           </ul>

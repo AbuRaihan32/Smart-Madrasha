@@ -31,32 +31,32 @@ const Account = () => {
           </h2>
 
           <ul className="mt-4 space-y-3">
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span> Easy Step Payment Collection</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span>Income & Expense Report</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span> Accounts Summary</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span>Daily,Monthly,Yearly Analysis</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span>Paid Notification by SMS</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span>Due Notification by SMS</span>
             </li>
-            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px]">
-              <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+            <li className="flex items-center gap-2 bg-slate-50 shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+              <RiCheckboxCircleFill></RiCheckboxCircleFill>{" "}
               <span>Online Money Receipt</span>
             </li>
           </ul>

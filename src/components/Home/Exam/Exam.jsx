@@ -21,20 +21,20 @@ const Exam = () => {
             </h2>
 
             <ul className="mt-4 space-y-3">
-              <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px]">
-                <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+              <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+                <RiCheckboxCircleFill ></RiCheckboxCircleFill>{" "}
                 <span> Flexible Setting</span>
               </li>
-              <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px]">
-                <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+              <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+                <RiCheckboxCircleFill ></RiCheckboxCircleFill>{" "}
                 <span> Easy to Modify</span>
               </li>
-              <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px]">
-                <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+              <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+                <RiCheckboxCircleFill ></RiCheckboxCircleFill>{" "}
                 <span> Result By SMS</span>
               </li>
-              <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px]">
-                <RiCheckboxCircleFill className="text-[#0098A8]"></RiCheckboxCircleFill>{" "}
+              <li className="flex items-center gap-2 bg-white shadow rounded-lg p-[9px] text-[14px] text-[#0098A8] hover:bg-[#0098A8] hover:text-white transition duration-200">
+                <RiCheckboxCircleFill ></RiCheckboxCircleFill>{" "}
                 <span> Smart Result Card</span>
               </li>
             </ul>
