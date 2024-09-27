@@ -1,9 +1,43 @@
+'use client'
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Overview = () => {
+  const [institutions, setInstitutions] = useState(0);
+  const [students, setStudents] = useState(0);
+  const [teachers, setTeachers] = useState(0);
+
+  useEffect(() => {
+    const duration = 2000;
+    const incrementInterval = 30; 
+    const institutionTarget = 200;
+    const studentTarget = 245984;
+    const teacherTarget = 1254;
+    const steps = duration / incrementInterval;
+
+    const incrementValues = {
+      institutions: institutionTarget / steps,
+      students: studentTarget / steps,
+      teachers: teacherTarget / steps,
+    };
+
+    const intervalId = setInterval(() => {
+      setInstitutions((prev) =>
+        Math.min(prev + incrementValues.institutions, institutionTarget)
+      );
+      setStudents((prev) =>
+        Math.min(prev + incrementValues.students, studentTarget)
+      );
+      setTeachers((prev) =>
+        Math.min(prev + incrementValues.teachers, teacherTarget)
+      );
+    }, incrementInterval);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-    <section className="bg-slate-50">
+    <section className="bg-slate-50 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -26,8 +60,8 @@ const Overview = () => {
           >
             <Image
               src="/Institution.png"
-             width={90} 
-             height={90}
+              width={90}
+              height={90}
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
               alt="institution"
             />
@@ -36,8 +70,8 @@ const Overview = () => {
               Total Institutions
             </div>
 
-            <div className="text-4xl font-extrabold  text-[#0098A8] md:text-4xl">
-              200
+            <div className="text-4xl font-extrabold text-[#0098A8] md:text-4xl">
+              {Math.floor(institutions)}
             </div>
           </div>
 
@@ -49,8 +83,8 @@ const Overview = () => {
           >
             <Image
               src="/Students1.png"
-             width={90} 
-             height={90}
+              width={90}
+              height={90}
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
               alt="Students"
             />
@@ -59,7 +93,7 @@ const Overview = () => {
             </div>
 
             <div className="text-4xl font-extrabold text-[#0098A8] md:text-4xl">
-              245984
+              {Math.floor(students)}
             </div>
           </div>
 
@@ -71,8 +105,8 @@ const Overview = () => {
           >
             <Image
               src="/Teachers.png"
-             width={90} 
-             height={90}
+              width={90}
+              height={90}
               className="w-24 h-24 mx-auto mb-2 border rounded-full"
               alt="Teachers"
             />
@@ -81,7 +115,7 @@ const Overview = () => {
             </div>
 
             <div className="text-4xl font-extrabold text-[#0098A8] md:text-4xl">
-              1254
+              {Math.floor(teachers)}
             </div>
           </div>
         </div>
