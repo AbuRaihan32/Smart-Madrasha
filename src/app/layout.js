@@ -3,6 +3,7 @@ import { Inter, Ubuntu } from "next/font/google";
 import AOSInitializer from "@/components/AOSInitializer/AOSInitializer";
 import Navbar from "@/components/Shared/Navbar";
 import Footer from "@/components/Shared/Footer";
+import { Router } from "@/components/Shared/Router";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,16 +18,20 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const isErrorPage = Router.pathname === "/not-found";
+
   return (
     <html lang="en">
       <body>
-        <AOSInitializer></AOSInitializer>
+        <AOSInitializer />
         <main className={`${inter.className} ${ubuntu.className}`}>
-          <nav className="z-50 sticky top-0">
-            <Navbar></Navbar>
-          </nav>
+          {isErrorPage && (
+            <nav className="z-50 sticky top-0">
+              <Navbar />
+            </nav>
+          )}
           {children}
-          <Footer></Footer>
+          {isErrorPage && <Footer />}
         </main>
       </body>
     </html>
