@@ -1,9 +1,10 @@
 import React from "react";
+import Button from "./Button";
 
 const Modal = () => {
   return (
-    <dialog id="my_modal_3" className="modal text-black">
-      <div className="modal-box">
+    <dialog id="my_modal_3" className="modal text-black w-[30%] mx-auto">
+      <div className="modal-box px-4 py-6 rounded-lg">
         <form method="dialog">
           {/* if there is a button in form, it will close the modal */}
           <button className="btn btn-sm btn-circle btn-ghost absolute right-3 top-2">
@@ -11,7 +12,7 @@ const Modal = () => {
           </button>
         </form>
         <h1 className="text-4xl font-bold text-center text-[#0098A8]">Login now!</h1>
-        <form className="card-body">
+        <form className="">
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
@@ -40,7 +41,7 @@ const Modal = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Sign In</button>
+            <Button text={'Sign In'}></Button>
           </div>
         </form>
       </div>
