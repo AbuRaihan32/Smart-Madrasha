@@ -19,7 +19,7 @@ export default function Home() {
       <Account></Account>
       <StudentReport></StudentReport>
       <Testimonials></Testimonials>
-      <div>
+      <div className="bg-slate-100 rounded-t-3xl md:rounded-t-[50px]">
         <Location></Location>
         <Message></Message>
       </div>

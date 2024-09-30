@@ -4,8 +4,8 @@ import { RiCheckboxCircleFill } from "react-icons/ri";
 
 const Account = () => {
   return (
-    <section className="max-w-6xl mx-auto">
-      <div className=" w-[94%] mx-auto flex items-center ">
+    <section className="max-w-6xl mx-auto px-5 md:px-0">
+      <div className=" w-[94%] mx-auto flex flex-col sm:flex-row items-center ">
         <div className="w-full">
           <div className="w-[80%] mx-auto">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async></script>

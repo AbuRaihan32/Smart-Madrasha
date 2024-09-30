@@ -42,7 +42,7 @@ export default function Testimonials() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                  <p className="mt-4 max-w-[85%] sm:max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -75,7 +75,7 @@ export default function Testimonials() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                  <p className="mt-4 max-w-[85%] sm:max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -108,7 +108,7 @@ export default function Testimonials() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                  <p className="mt-4 max-w-[85%] sm:max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -141,7 +141,7 @@ export default function Testimonials() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                  <p className="mt-4 max-w-[85%] sm:max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -174,7 +174,7 @@ export default function Testimonials() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="mt-4 max-w-[80%] mx-auto leading-relaxed text-gray-700">
+                  <p className="mt-4 max-w-[85%] sm:max-w-[80%] mx-auto leading-relaxed text-gray-700">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating

@@ -51,8 +51,8 @@ const Message = () => {
   };
 
   return (
-    <section className="bg-slate-100 pt-10 pb-20">
-      <div className="max-w-6xl mx-auto px-4 ">
+    <section className="pt-10 pb-20 px-7">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact US</h2>
         <div className="grid md:grid-cols-4 gap-6">
           <form onSubmit={handleSubmit} className="space-y-4 col-span-3">

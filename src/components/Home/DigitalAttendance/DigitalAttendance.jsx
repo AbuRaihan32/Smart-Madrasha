@@ -6,8 +6,8 @@ import Att from "../../../../public/Attendance.json";
 
 const DigitalAttendance = () => {
   return (
-    <section className="max-w-6xl mx-auto py-8">
-      <div className=" w-[94%] mx-auto flex items-center ">
+    <section className=" max-w-6xl mx-auto py-8 px-5 md:px-0">
+      <div className="  w-[94%] mx-auto flex flex-col sm:flex-row items-center ">
         <div className="w-full">
           <LottieFile data={Att}></LottieFile>
         </div>

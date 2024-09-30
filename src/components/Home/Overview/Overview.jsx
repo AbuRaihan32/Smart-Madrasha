@@ -38,9 +38,9 @@ const Overview = () => {
 
   return (
     <section className="bg-slate-50 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div className="max-w-6xl mx-auto py-8 px-7 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+          <h2 className="text-2xl font-bold text-gray-900 sm:text-4xl">
             Empowering Educational Institutions
           </h2>
 

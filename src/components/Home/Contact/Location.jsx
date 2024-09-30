@@ -3,7 +3,7 @@ import Message from "./Message";
 
 const Location = () => {
   return (
-    <section className="bg-slate-100 pt-5 rounded-t-[50px] pb-8">
+    <section className=" pt-5 pb-8 px-7">
       <div className=" max-w-6xl mx-auto  mt-12 rounded-lg">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
           Find Us on the Map

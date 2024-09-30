@@ -5,9 +5,9 @@ import LottieFile from "@/components/Shared/LottieFile";
 
 const Exam = () => {
   return (
-    <section className="bg-slate-50 py-5 ">
+    <section className="bg-slate-50 py-5 px-5 md:px-0">
       <div className="max-w-6xl mx-auto py-8">
-        <div className=" w-[94%] mx-auto flex items-center flex-row-reverse">
+        <div className=" w-[94%] mx-auto flex items-center flex-col  sm:flex-row-reverse">
           <div className="w-full">
             <LottieFile data={exam}></LottieFile>
           </div>

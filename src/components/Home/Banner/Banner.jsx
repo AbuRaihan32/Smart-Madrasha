@@ -6,10 +6,10 @@ import Button from "@/components/Shared/Button";
 const Banner = () => {
   return (
     <div className="">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between h-[550px] z-0 pt-5">
+      <div className="max-w-6xl px-7 xl:px-0 mx-auto flex flex-col md:flex-row gap-4 md:gap-0  items-center justify-between md:h-[550px] z-0 pt-5">
         <div className="max-w-md">
           <div className="pb-5 border-b mb-4">
-            <h1 className="text-5xl font-bold mb-1">Biddyanoy.com</h1>
+            <h1 className="text-3xl sm:text-5xl font-bold mb-1">Biddyanoy.com</h1>
             <p>Educational institution management service</p>
           </div>
           <p className="mb-5 text-justify">

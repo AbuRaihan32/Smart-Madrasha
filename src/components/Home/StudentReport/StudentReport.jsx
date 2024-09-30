@@ -7,9 +7,9 @@ import Report from "../../../../public/Report.json";
 
 const StudentReport = () => {
   return (
-    <section className="bg-slate-50">
+    <section className="bg-slate-50 pb-10 sm:pb-0 px-5 md:px-0">
       <div className="max-w-6xl mx-auto">
-        <div className=" w-[94%] mx-auto flex items-center flex-row-reverse">
+        <div className=" w-[94%] mx-auto flex items-center flex-col sm:flex-row-reverse">
           <div className="w-full">
             <div className="w-[80%] mx-auto">
             <LottieFile data={Report}></LottieFile>
