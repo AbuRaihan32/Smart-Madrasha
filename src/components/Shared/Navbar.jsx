@@ -3,10 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineLogin, AiOutlineLogout } from "react-icons/ai";
-import Modal from "./Modal";
+import { ModalContainer, Reoverlay } from "reoverlay";
+import LoginModal from "../LoginModal/LoginModal";
 
 const Navbar = () => {
   const user = false;
+
+  // Reoverlay configuration
+  Reoverlay.config([{ name: "LoginModal", component: LoginModal }]);
+
+  const showLoginModal = () => {
+    Reoverlay.showModal("LoginModal");
+  };
+
   const navLinks = (
     <>
       <li>
@@ -64,10 +73,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           {user ? (
-            <button
-              onClick={() => alert("Logged Out")}
-              className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group"
-            >
+            <button className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group">
               <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-100 group-hover:h-full"></span>
               <span className="absolute right-1 pr-4 duration-200 ease-out group-hover:translate-x-12">
                 <AiOutlineLogout size={22}></AiOutlineLogout>
@@ -80,9 +86,7 @@ const Navbar = () => {
               </span>
             </button>
           ) : (
-            <button
-              onClick={() => document.getElementById("my_modal_3").showModal()}
-            >
+            <button onClick={showLoginModal}>
               <a className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group">
                 <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-100 group-hover:h-full"></span>
                 <span className="absolute right-1 pr-4 duration-200 ease-out group-hover:translate-x-12">
@@ -92,14 +96,14 @@ const Navbar = () => {
                   <AiOutlineLogin color="#0098A8" size={22}></AiOutlineLogin>
                 </span>
                 <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-[#0098A8] ">
-                  Sign In
+                  Login Now
                 </span>
               </a>
             </button>
           )}
-          <Modal></Modal>
         </div>
       </div>
+      <ModalContainer />
     </div>
   );
 };
