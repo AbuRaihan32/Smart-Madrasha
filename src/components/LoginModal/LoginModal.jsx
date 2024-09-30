@@ -8,7 +8,7 @@ const LoginModal = () => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    alert(`Logging in with Email : ${email} Password : ${password}`);
+    alert(`Logged in with Email : ${email} Password : ${password}`);
     Reoverlay.hideModal(); // for close modal
   };
 
