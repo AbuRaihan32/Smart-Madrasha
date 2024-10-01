@@ -52,7 +52,7 @@ const RegisterModal = () => {
               <input
                 type="text"
                 name="InstituteBangla"
-                placeholder="মেমব্রু আমাদের বিদ্যালয়"
+                placeholder="যেমন: আমাদের বিদ্যালয়"
                 class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -101,7 +101,7 @@ const RegisterModal = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Example: test@test.com"
+                placeholder="Example: example@gmail.com"
                 class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
