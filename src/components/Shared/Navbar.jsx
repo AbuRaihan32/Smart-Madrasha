@@ -91,7 +91,7 @@ const Navbar = () => {
               </span>
             </button>
           ) : (
-            <>
+            <div className="flex  gap-2">
               <button onClick={showLoginModal}>
                 <a className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group">
                   <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-100 group-hover:h-full"></span>
@@ -102,7 +102,7 @@ const Navbar = () => {
                     <AiOutlineLogin color="#0098A8" size={22}></AiOutlineLogin>
                   </span>
                   <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-[#0098A8] ">
-                    Login Now
+                    Login
                   </span>
                 </a>
               </button>
@@ -116,11 +116,11 @@ const Navbar = () => {
                     <AiOutlineLogin color="#0098A8" size={22}></AiOutlineLogin>
                   </span>
                   <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-[#0098A8] ">
-                    Register Now
+                    Register
                   </span>
                 </a>
               </button>
-            </>
+            </div>
           )}
         </div>
       </div>

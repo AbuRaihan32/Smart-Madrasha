@@ -18,8 +18,8 @@ const RegisterModal = () => {
 
   return (
     <ModalWrapper animation={"door"}>
-      <div className="p-8 h-[calc(100vh-15vh)] bg-white rounded-lg shadow-lg overflow-y-scroll no-scrollbar">
-        <div className="w-[90%] h-14 bg-[#0098A8] absolute -top-7  sm:right-[32px] flex items-center justify-center text-white">
+      <div className="p-4 sm:p-8 max-h-[calc(100vh-15vh)] bg-white rounded-lg shadow-lg overflow-y-scroll no-scrollbar">
+        <div className="w-[90%] h-14 bg-[#0098A8] absolute -top-7 right-4 md:right-[32px] flex items-center justify-center text-white">
           <div>
             <h1 className="text-2xl text-center text- font-bold">
               Register Now
@@ -33,7 +33,7 @@ const RegisterModal = () => {
           </div>
         </div>
         <form onSubmit={handleRegister}>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5 mb-3">
             <div>
               <label class="block text-gray-700">
                 Institute Name <span class="text-red-500">*</span>
@@ -155,27 +155,6 @@ const RegisterModal = () => {
                 name="confirmPass"
                 class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
-            <div>
-              <label class="block text-gray-700">
-                Number of Current Students
-              </label>
-              <input
-                type="number"
-                name="studentsNum"
-                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div>
-              <label class="block text-gray-700">Comment/Feedback</label>
-              <textarea
-                rows="2"
-                name="feedback"
-                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              ></textarea>
             </div>
           </div>
 
