@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-white'>
+      <body className='bg-white text-black'>
         <AOSInitializer />
         <main className={`${inter.className} ${ubuntu.className}`}>
           <nav className="z-50 sticky top-0">
