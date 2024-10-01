@@ -5,15 +5,20 @@ import React from "react";
 import { AiOutlineLogin, AiOutlineLogout } from "react-icons/ai";
 import { ModalContainer, Reoverlay } from "reoverlay";
 import LoginModal from "../LoginModal/LoginModal";
+import RegisterModal from "../RegisterModal/RegisterModal";
 
 const Navbar = () => {
   const user = false;
 
   // Reoverlay configuration
-  Reoverlay.config([{ name: "LoginModal", component: LoginModal }]);
+  Reoverlay.config([{ name: "LoginModal", component: LoginModal}, {name: 'RegisterModal', component: RegisterModal }]);
 
   const showLoginModal = () => {
     Reoverlay.showModal("LoginModal");
+  };
+
+  const showRegisterModal = () => {
+    Reoverlay.showModal("RegisterModal");
   };
 
   const navLinks = (
@@ -86,20 +91,36 @@ const Navbar = () => {
               </span>
             </button>
           ) : (
-            <button onClick={showLoginModal}>
-              <a className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group">
-                <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-100 group-hover:h-full"></span>
-                <span className="absolute right-1 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                  <AiOutlineLogin size={22}></AiOutlineLogin>
-                </span>
-                <span className="absolute left-1 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                  <AiOutlineLogin color="#0098A8" size={22}></AiOutlineLogin>
-                </span>
-                <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-[#0098A8] ">
-                  Login Now
-                </span>
-              </a>
-            </button>
+            <>
+              <button onClick={showLoginModal}>
+                <a className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group">
+                  <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-100 group-hover:h-full"></span>
+                  <span className="absolute right-1 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                    <AiOutlineLogin size={22}></AiOutlineLogin>
+                  </span>
+                  <span className="absolute left-1 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                    <AiOutlineLogin color="#0098A8" size={22}></AiOutlineLogin>
+                  </span>
+                  <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-[#0098A8] ">
+                    Login Now
+                  </span>
+                </a>
+              </button>
+              <button onClick={showRegisterModal}>
+                <a className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[#32b2c0]  group">
+                  <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-100 group-hover:h-full"></span>
+                  <span className="absolute right-1 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                    <AiOutlineLogin size={22}></AiOutlineLogin>
+                  </span>
+                  <span className="absolute left-1 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                    <AiOutlineLogin color="#0098A8" size={22}></AiOutlineLogin>
+                  </span>
+                  <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-[#0098A8] ">
+                    Register Now
+                  </span>
+                </a>
+              </button>
+            </>
           )}
         </div>
       </div>
