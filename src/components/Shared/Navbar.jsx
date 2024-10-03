@@ -27,13 +27,13 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <a>Home</a>
+        <Link href={'/'}>Home</Link>
       </li>
       <li>
-        <a>Contact US</a>
+        <Link href={'#contact'}>Contact US</Link>
       </li>
       <li>
-        <a>About US</a>
+        <Link href={'/dashboard'}>Dashboard</Link>
       </li>
     </>
   );

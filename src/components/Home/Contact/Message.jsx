@@ -51,7 +51,7 @@ const Message = () => {
   };
 
   return (
-    <section className="pt-10 pb-20 px-7">
+    <section id="contact" className="pt-10 pb-20 px-7">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact US</h2>
         <div className="grid md:grid-cols-4 gap-6">
