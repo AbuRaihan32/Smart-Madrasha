@@ -6,9 +6,11 @@ import { AiOutlineLogin, AiOutlineLogout } from "react-icons/ai";
 import { ModalContainer, Reoverlay } from "reoverlay";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const user = false;
+  const pathName = usePathname();
 
   // Reoverlay configuration
   Reoverlay.config([
@@ -27,16 +29,26 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <Link href={'/'}>Home</Link>
+        <Link href={"/"}>Home</Link>
       </li>
       <li>
-        <Link href={'#contact'}>Contact US</Link>
+        <Link href={"#contact"}>Contact US</Link>
       </li>
       <li>
-        <Link href={'/dashboard'}>Dashboard</Link>
+        <Link href={"/dashboard"}>Dashboard</Link>
       </li>
     </>
   );
+
+  if (pathName.includes("dashboard")) {
+    return (
+      <nav>
+        <div className="w-full h-10 bg-slate-400 flex items-center justify-center">
+          <p>Navbar</p>
+        </div>
+      </nav>
+    );
+  }
 
   return (
     <div className="bg-[#0098A8]">
