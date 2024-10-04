@@ -7,6 +7,7 @@ import { ModalContainer, Reoverlay } from "reoverlay";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import { usePathname } from "next/navigation";
+import Sidebar from "../Dashboard/Sidebar";
 
 const Navbar = () => {
   const user = false;
@@ -41,13 +42,7 @@ const Navbar = () => {
   );
 
   if (pathName.includes("dashboard")) {
-    return (
-      <nav>
-        <div className="w-full h-10 bg-slate-400 flex items-center justify-center">
-          <p>Navbar</p>
-        </div>
-      </nav>
-    );
+    return <Sidebar></Sidebar>;
   }
 
   return (

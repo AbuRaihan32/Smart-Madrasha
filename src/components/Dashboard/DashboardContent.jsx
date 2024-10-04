@@ -1,6 +1,6 @@
 const DashboardContent = () => {
   return (
-    <div className="w-4/5 p-10 space-y-6">
+    <div className="w-4/5 absolute right-0 top-0 p-10 space-y-6">
       {/* Header */}
       <header className="flex justify-between items-center">
         <div>
