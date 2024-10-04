@@ -1,11 +1,14 @@
-import React from 'react';
+import DashboardContent from "@/components/Dashboard/DashboardContent";
+import Sidebar from "@/components/Dashboard/Sidebar";
+import React from "react";
 
-const Page = () => {
-    return (
-        <div>
-            dashboard
-        </div>
-    );
+const page = () => {
+  return (
+    <div className="flex h-screen bg-gray-900 text-gray-100">
+      <Sidebar />
+      <DashboardContent />
+    </div>
+  );
 };
 
-export default Page;
+export default page;
