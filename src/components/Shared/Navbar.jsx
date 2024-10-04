@@ -42,7 +42,7 @@ const Navbar = () => {
   );
 
   if (pathName.includes("dashboard")) {
-    return <Sidebar></Sidebar>;
+    return;
   }
 
   return (

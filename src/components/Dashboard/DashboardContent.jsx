@@ -1,24 +1,6 @@
 const DashboardContent = () => {
   return (
-    <div className="w-4/5 absolute right-0 top-0 p-10 space-y-6">
-      {/* Header */}
-      <header className="flex justify-between items-center">
-        <div>
-          <h2 className="text-2xl font-bold">Welcome Back, Ali 👋</h2>
-          <p className="text-gray-400">
-            Here's what's happening with your store today.
-          </p>
-        </div>
-        <div className="relative">
-          <input
-            type="text"
-            placeholder="Search for anything..."
-            className="pl-10 pr-4 py-2 rounded-full bg-gray-800 text-gray-300"
-          />
-          <span className="absolute left-3 top-2 text-gray-400">🔍</span>
-        </div>
-      </header>
-
+    <div className="space-y-6">
       {/* Summary */}
       <section className="grid grid-cols-3 gap-6">
         <div className="bg-indigo-700 p-4 rounded-lg">

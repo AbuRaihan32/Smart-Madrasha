@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaHome,
   FaWallet,
@@ -8,80 +9,38 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="w-1/5 bg-indigo-800 p-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto">
+    <div className="w-1/6 bg-indigo-800 p-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto">
       <div>
         <h1 className="text-3xl font-bold text-white mb-10">uifry</h1>
         <nav className="space-y-4">
-          <a
+          <Link
             href="#"
             className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
           >
             <FaHome className="text-xl" />
             <span>Dashboard</span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
           >
             <FaChartPie className="text-xl" />
             <span>Analytics</span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
           >
             <FaWallet className="text-xl" />
             <span>My Wallet</span>
-          </a>
-          <a
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
-          >
-            <FaHome className="text-xl" />
-            <span>Dashboard</span>
-          </a>
-          <a
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
-          >
-            <FaChartPie className="text-xl" />
-            <span>Analytics</span>
-          </a>
-          <a
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
-          >
-            <FaWallet className="text-xl" />
-            <span>My Wallet</span>
-          </a>
-          <a
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
-          >
-            <FaHome className="text-xl" />
-            <span>Dashboard</span>
-          </a>
-          <a
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
-          >
-            <FaChartPie className="text-xl" />
-            <span>Analytics</span>
-          </a>
-          <a
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
-          >
-            <FaWallet className="text-xl" />
-            <span>My Wallet</span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-lg"
           >
             <FaUserCog className="text-xl" />
             <span>Settings</span>
-          </a>
+          </Link>
         </nav>
       </div>
       <div>
@@ -96,13 +55,13 @@ const Sidebar = () => {
             <p className="text-xs text-gray-400">Web Developer</p>
           </div>
         </div>
-        <a
+        <Link
           href="#"
           className="flex items-center space-x-3 mt-10 p-2 hover:bg-indigo-700 rounded-lg"
         >
           <FaMoon className="text-xl" />
           <span>Dark Mode</span>
-        </a>
+        </Link>
       </div>
     </div>
   );
