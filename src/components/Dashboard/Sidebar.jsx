@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   FaHome,
@@ -45,7 +46,7 @@ const Sidebar = () => {
       </div>
       <div>
         <div className="flex items-center space-x-3">
-          <img
+          <Image
             src="https://via.placeholder.com/50"
             alt="Profile"
             className="w-12 h-12 rounded-full"

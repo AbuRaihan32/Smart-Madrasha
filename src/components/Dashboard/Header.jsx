@@ -6,7 +6,7 @@ const Header = () => {
       <div>
         <h2 className="text-2xl font-bold">Welcome Back, Ali 👋</h2>
         <p className="">
-          Here's what's happening with your store today.
+          Here&rsquo;s what&rsquo;s happening with your store today.
         </p>
       </div>
       <div className="relative">

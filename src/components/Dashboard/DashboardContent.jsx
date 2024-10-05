@@ -51,7 +51,7 @@ const DashboardContent = () => {
             </tr>
             <tr>
               <td>Fri, 19 Apr 2020</td>
-              <td>McDonald's</td>
+              <td>McDonald&rsquo;s</td>
               <td>$7.63</td>
               <td>Completed</td>
             </tr>
