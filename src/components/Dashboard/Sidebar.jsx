@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <div className="w-1/6 bg-[#0098A8] p-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto">
       <div>
-        <h1 className="text-3xl font-bold text-white mb-10">uifry</h1>
+        <h1 className="text-3xl font-bold text-white mb-5">uifry</h1>
         <nav className="space-y-4">
           <Link
             href="#"
