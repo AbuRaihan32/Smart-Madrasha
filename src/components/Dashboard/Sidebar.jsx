@@ -47,8 +47,10 @@ const Sidebar = () => {
       <div>
         <div className="flex items-center space-x-3">
           <Image
-            src="https://via.placeholder.com/50"
+            src="/Avatar.png"
             alt="Profile"
+            width={30}
+            height={30}
             className="w-12 h-12 rounded-full"
           />
           <div>
