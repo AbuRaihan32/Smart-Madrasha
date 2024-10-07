@@ -1,9 +1,10 @@
 import { IoMdCall } from "react-icons/io";
-import { MdLocationPin, MdMarkEmailRead } from "react-icons/md";
+import { MdLocationPin } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 
 
 const Header = () => {
+  // TODO: get header data from database
   return (
     <header className=" w-5/6 bg-[#00A12A] p-5 flex justify-between fixed right-0 text-white overflow-y-auto">
       <div>
