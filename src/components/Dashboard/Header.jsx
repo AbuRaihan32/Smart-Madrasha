@@ -2,9 +2,12 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className=" w-5/6 bg-[#0098A8] p-5 flex justify-between fixed right-0 text-white overflow-y-auto">
+    <header className=" w-5/6 bg-[#00A12A] p-5 flex justify-between fixed right-0 text-white overflow-y-auto">
       <div>
-        <h2 className="text-2xl font-bold">Welcome Back, Ali 👋</h2>
+        <h2 className="text-2xl font-bold">
+          আলহাজ্ব আবুল কাশেম ও মরহুমা ফাতেমা খাতুন <br /> মারকাযুল কুরআন মাদরাসা
+          (2024-25)
+        </h2>
         <p className="">
           Here&rsquo;s what&rsquo;s happening with your store today.
         </p>
