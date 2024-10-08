@@ -1,33 +1,35 @@
-'use client'
-import { useEffect, useState } from "react";
+import React from 'react';
 
-const data = {
-  pre: 48,
-  lateAbs: 16,
-  late: 12,
-  abs: 0,
-};
 const EmployeeAttendance = () => {
-  const [attendanceData, setAttendanceData] = useState({
-    pre: 0,
-    lateAbs: 0,
-    late: 0,
-    abs: 0,
-  });
-
-  useEffect(() => {
-    setAttendanceData(data);
-  }, []);
+  const attendanceData = [
+    { label: "Pre", count: 48, color: "bg-green-500" },
+    { label: "Late Abs", count: 16, color: "bg-orange-500" },
+    { label: "Late", count: 4, color: "bg-orange-400" },
+    { label: "Abs", count: 12, color: "bg-red-500" },
+  ];
 
   return (
-    <div className="bg-white shadow rounded-lg p-4 mb-4">
-      <h3 className="font-semibold">Employee Attendance Today</h3>
-      <ul className="mt-4">
-        <li>Present: {attendanceData.pre}</li>
-        <li>Late Absences: {attendanceData.lateAbs}</li>
-        <li>Late: {attendanceData.late}</li>
-        <li>Absentees: {attendanceData.abs}</li>
-      </ul>
+    <div className="bg-white shadow rounded-lg p-4 ">
+      <div className="flex justify-between items-center bg-teal-500 text-white p-2 rounded-t-lg">
+        <h3 className="font-semibold flex items-center">
+          <span className="material-icons mr-1">notifications</span>
+          Employee Attendance
+        </h3>
+        <span>Today</span>
+      </div>
+      <div className="pt-4">
+        {attendanceData.map((item, index) => (
+          <div key={index} className="flex justify-between items-center py-2 border-t">
+            <span>{item.label}</span>
+            <span
+              className={`text-white px-2 py-1 rounded-full ${item.color}`}
+              style={{ minWidth: "32px", textAlign: "center" }}
+            >
+              {item.count}
+            </span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

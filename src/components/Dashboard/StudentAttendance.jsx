@@ -1,27 +1,33 @@
-import { useEffect, useState } from "react";
-
-const data = {
-  pre: 819,
-  abs: 76,
-};
+import React from 'react';
 
 const StudentAttendance = () => {
-  const [attendanceData, setAttendanceData] = useState({
-    pre: 819,
-    abs: 76,
-  });
-
-  useEffect(() => {
-    setAttendanceData(data);
-  }, []);
+  const attendanceData = [
+    { label: "Pre", count: 1122, color: "bg-green-600" },
+    { label: "Abs", count: 156, color: "bg-red-600" },
+  ];
 
   return (
-    <div className="bg-white shadow rounded-lg p-4 mb-4">
-      <h3 className="font-semibold">Student Attendance Today</h3>
-      <ul className="mt-4">
-        <li>Present: {attendanceData.pre}</li>
-        <li>Absent: {attendanceData.abs}</li>
-      </ul>
+    <div className="bg-white shadow rounded-lg p-4 w-full mx-auto">
+      <div className="flex justify-between items-center bg-purple-600 text-white p-2 rounded-t-lg">
+        <h3 className="font-semibold flex items-center">
+          <span className="material-icons mr-1">notifications</span>
+          Student Attendance
+        </h3>
+        <span>Today</span>
+      </div>
+      <div className="pt-4">
+        {attendanceData.map((item, index) => (
+          <div key={index} className="flex justify-between items-center py-2 border-t">
+            <span>{item.label}</span>
+            <span
+              className={`text-white px-2 py-1 rounded-full ${item.color}`}
+              style={{ minWidth: "40px", textAlign: "center" }}
+            >
+              {item.count}
+            </span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
