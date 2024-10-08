@@ -22,22 +22,22 @@ const StudentTable = () => {
   //   queryFn: fetchStudents,
   // });
 
-  // Handle loading state
+  // ! Handle loading state
   // if (isLoading) {
   //   return <p>Loading student data...</p>;
   // }
 
-  // // Handle error state
+  // ! Handle error state
   // if (error) {
   //   return <p>Error fetching data: {error.message}</p>;
   // }
 
-  // Handle empty data state
+  // ! Handle empty data state
   if (!studentData?.classes.length) {
     return <p>No students found for the current session.</p>;
   }
 
-  // Render the table
+  // ! Render the table
   return (
     <div className="bg-white shadow rounded-lg p-4">
       <div className="flex justify-between items-center bg-green-600 text-white p-2 rounded-t-lg">
