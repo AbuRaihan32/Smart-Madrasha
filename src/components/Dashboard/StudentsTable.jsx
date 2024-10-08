@@ -1,35 +1,36 @@
 "use client";
-import { useQuery } from "@tanstack/react-query";
-import useAxiosSecure from "../Hooks/useAxiosSecure";
+// import { useQuery } from "@tanstack/react-query";
+// import useAxiosSecure from "../Hooks/useAxiosSecure";
+import studentData from '../../data/students.json';
 
 const StudentTable = () => {
-  const axiosSecure = useAxiosSecure();
+  // const axiosSecure = useAxiosSecure();
 
   // Fetch the student data securely using Axios
-  const fetchStudents = async () => {
-    const response = await axiosSecure.get("/api/students");
-    return response.data;
-  };
+  // const fetchStudents = async () => {
+  //   const response = await axiosSecure.get("/api/students");
+  //   return response.data;
+  // };
 
   // Use React Query's useQuery hook to fetch and manage data
-  const {
-    data: studentData,
-    error,
-    isLoading,
-  } = useQuery({
-    queryKey: ["students"],
-    queryFn: fetchStudents,
-  });
+  // const {
+  //   data: studentData,
+  //   error,
+  //   isLoading,
+  // } = useQuery({
+  //   queryKey: ["students"],
+  //   queryFn: fetchStudents,
+  // });
 
   // Handle loading state
-  if (isLoading) {
-    return <p>Loading student data...</p>;
-  }
+  // if (isLoading) {
+  //   return <p>Loading student data...</p>;
+  // }
 
-  // Handle error state
-  if (error) {
-    return <p>Error fetching data: {error.message}</p>;
-  }
+  // // Handle error state
+  // if (error) {
+  //   return <p>Error fetching data: {error.message}</p>;
+  // }
 
   // Handle empty data state
   if (!studentData?.classes.length) {
