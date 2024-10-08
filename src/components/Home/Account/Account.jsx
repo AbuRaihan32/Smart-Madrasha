@@ -1,24 +1,36 @@
-import React from "react";
+"use client";
 import { FaMoneyBill1Wave } from "react-icons/fa6";
 import { RiCheckboxCircleFill } from "react-icons/ri";
+import { useState, useEffect } from "react";
 
 const Account = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Ensure lottie-player only renders on the client-side
+  }, []);
+
   return (
     <section className="max-w-6xl mx-auto px-5 md:px-0">
       <div className=" w-[94%] mx-auto flex flex-col sm:flex-row items-center ">
         <div className="w-full">
           <div className="w-[80%] mx-auto">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async></script>
-            <lottie-player
-              src="https://lottie.host/3127308b-96c3-470e-9055-c77edeadad19/3gsKIt4xeo.json"
-              background="##fff"
-              speed="1"
-              className="width: 300px; height: 300px"
-              loop
-              autoplay
-              direction="1"
-              mode="normal"
-            ></lottie-player>
+            {isClient && (
+              <>
+                <script
+                  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+                  async
+                ></script>
+                <lottie-player
+                  src="https://lottie.host/3127308b-96c3-470e-9055-c77edeadad19/3gsKIt4xeo.json"
+                  background="##fff"
+                  speed="1"
+                  style={{ width: "300px", height: "300px" }}
+                  loop
+                  autoplay
+                ></lottie-player>
+              </>
+            )}
           </div>
         </div>
 
