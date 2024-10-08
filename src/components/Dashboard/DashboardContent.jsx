@@ -1,3 +1,4 @@
+import BirthdayList from "./BirthdayList";
 import EmployeeAttendance from "./EmployeeAttendance";
 import GenderChart from "./GenderChart";
 import StudentAttendance from "./StudentAttendance";
@@ -10,6 +11,7 @@ const DashboardContent = () => {
       <EmployeeAttendance></EmployeeAttendance>
       <StudentAttendance></StudentAttendance>
       <GenderChart></GenderChart>
+      <BirthdayList></BirthdayList>
     </>
   );
 };
