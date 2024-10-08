@@ -1,5 +1,3 @@
-import React from "react";
-import { MdOutlineMenuBook } from "react-icons/md";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import { GrDocumentUser } from "react-icons/gr";
 import LottieFile from "@/components/Shared/LottieFile";

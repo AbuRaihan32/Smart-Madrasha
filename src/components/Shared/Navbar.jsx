@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { AiOutlineLogin, AiOutlineLogout } from "react-icons/ai";
 import { ModalContainer, Reoverlay } from "reoverlay";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import { usePathname } from "next/navigation";
-import Sidebar from "../Dashboard/Sidebar";
 
 const Navbar = () => {
   const user = false;

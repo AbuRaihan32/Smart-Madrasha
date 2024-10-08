@@ -20,8 +20,8 @@ const Sidebar = () => {
           height={100}
           className="w-28 h-28 rounded-full border-4 mt-2 z-50"
         />
-        <div className='absolute top-4 z-0'>
-          <PuffLoader color="white" size={135} speedMultiplier={0.5}></PuffLoader>
+        <div className='absolute top-[14px] z-0'>
+          <PuffLoader color="lime" size={140} speedMultiplier={0.5}></PuffLoader>
         </div>
         <p className="text-[14px]">আবু রায়হান মাহফুজ</p>
       </div>
