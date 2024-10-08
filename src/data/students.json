@@ -1,0 +1,23 @@
+{
+  "total_students": 1283,
+  "classes": [
+    { "class": "১ম বর্ষ", "newStudent": 12, "oldStudent": 162, "total": 174 },
+    { "class": "২য় বর্ষ", "newStudent": 7, "oldStudent": 117, "total": 124 },
+    { "class": "৩য় বর্ষ", "newStudent": 7, "oldStudent": 81, "total": 88 },
+    { "class": "৪র্থ বর্ষ", "newStudent": 9, "oldStudent": 54, "total": 63 },
+    { "class": "৫ম বর্ষ", "newStudent": 0, "oldStudent": 46, "total": 46 },
+    { "class": "৬ষ্ঠ বর্ষ", "newStudent": 0, "oldStudent": 40, "total": 40 },
+    { "class": "৭ম বর্ষ", "newStudent": 1, "oldStudent": 6, "total": 7 },
+    { "class": "৮ম বর্ষ", "newStudent": 3, "oldStudent": 12, "total": 15 },
+    { "class": "কামিল", "newStudent": 20, "oldStudent": 102, "total": 122 },
+    { "class": "নাজেরা", "newStudent": 0, "oldStudent": 99, "total": 99 },
+    { "class": "সানাবিয়া", "newStudent": 1, "oldStudent": 14, "total": 15 },
+    { "class": "হিফজুল কুরআন", "newStudent": 2, "oldStudent": 97, "total": 99 },
+    {
+      "class": "মুতাওয়াসসিতিয়া",
+      "newStudent": 3,
+      "oldStudent": 110,
+      "total": 110
+    }
+  ]
+}
