@@ -1,4 +1,5 @@
 import BirthdayList from "./BirthdayList";
+import BloodGroupChart from "./BloodGroupChart";
 import EmployeeAttendance from "./EmployeeAttendance";
 import GenderChart from "./GenderChart";
 import StudentAttendance from "./StudentAttendance";
@@ -11,6 +12,7 @@ const DashboardContent = () => {
       <EmployeeAttendance></EmployeeAttendance>
       <StudentAttendance></StudentAttendance>
       <GenderChart></GenderChart>
+      <BloodGroupChart></BloodGroupChart>
       <BirthdayList></BirthdayList>
     </>
   );
