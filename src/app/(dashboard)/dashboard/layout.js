@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <Header></Header>
         <Sidebar></Sidebar>
       </nav>
-      <div className="w-5/6 absolute right-0 top-20 p-10 overflow-auto">
+      <div className="w-5/6 absolute right-0 top-20 p-10 overflow-auto bg-[#EEF5F9]">
         {children}
       </div>
       <Footer />

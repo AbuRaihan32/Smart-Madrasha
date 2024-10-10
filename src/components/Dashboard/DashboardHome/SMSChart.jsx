@@ -57,7 +57,7 @@ const SMSChart = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="w-[50%]">
+        <div className="w-[80%] mx-auto">
           <Doughnut data={data} options={options} />
         </div>
       </div>

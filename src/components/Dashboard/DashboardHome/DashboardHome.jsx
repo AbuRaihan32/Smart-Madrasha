@@ -11,12 +11,13 @@ import GenderChart from "./GenderChart";
 const DashboardHome = () => {
   return (
     <div>
-      <div className='flex flex-col md:flex-row gap-4'>
-        <div className='w-[70%]'>
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="w-[70%] space-y-4">
           <StudentTable></StudentTable>
           <SessionBasedStudentChart></SessionBasedStudentChart>
+          <BirthdayList></BirthdayList>
         </div>
-        <div>
+        <div className="space-y-4 w-[30%]">
           <GenderChart></GenderChart>
           <EmployeeAttendance></EmployeeAttendance>
           <StudentAttendance></StudentAttendance>
@@ -24,9 +25,6 @@ const DashboardHome = () => {
           <EmployeeChart></EmployeeChart>
           <SMSChart></SMSChart>
         </div>
-      </div>
-      <div>
-        <BirthdayList></BirthdayList>
       </div>
     </div>
   );

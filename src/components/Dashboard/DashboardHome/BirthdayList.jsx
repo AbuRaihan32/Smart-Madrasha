@@ -42,7 +42,7 @@ const BirthdayList = () => {
   ];
 
   return (
-    <div className="space-y-8 p-4">
+    <div className="space-y-4">
       {/* Today Birthday Section */}
       <div className="bg-blue-500 text-white shadow-lg rounded-lg p-4">
         <div className="flex justify-between items-center">

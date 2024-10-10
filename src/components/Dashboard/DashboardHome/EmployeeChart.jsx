@@ -46,7 +46,7 @@ const EmployeeChart = () => {
           Total 80
         </span>
       </div>
-      <div className="w-[50%] mx-auto">
+      <div className="w-[80%] mx-auto">
         <Pie data={data} options={options} />
       </div>
     </div>
