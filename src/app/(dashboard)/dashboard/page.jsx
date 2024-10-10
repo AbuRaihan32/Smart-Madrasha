@@ -1,16 +1,9 @@
-'use client'
-
-import DashboardContent from "@/components/Dashboard/DashboardHome/DashboardContent";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
-const queryClient = new QueryClient();
+import DashboardHome from "@/components/Dashboard/DashboardHome/DashboardHome";
 
 const page = () => {
   return (
     <div className="">
-      <QueryClientProvider client={queryClient}>
-        <DashboardContent/>
-      </QueryClientProvider>
+      <DashboardHome />
     </div>
   );
 };

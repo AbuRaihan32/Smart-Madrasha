@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdNotifications } from 'react-icons/md';
 
 const EmployeeAttendance = () => {
   const attendanceData = [
@@ -12,7 +13,7 @@ const EmployeeAttendance = () => {
     <div className="bg-white shadow rounded-lg p-4 ">
       <div className="flex justify-between items-center bg-teal-500 text-white p-2 rounded-t-lg">
         <h3 className="font-semibold flex items-center">
-          <span className="material-icons mr-1">notifications</span>
+          <span className="material-icons mr-1"><MdNotifications></MdNotifications></span>
           Employee Attendance
         </h3>
         <span>Today</span>

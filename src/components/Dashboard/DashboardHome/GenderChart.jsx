@@ -1,3 +1,4 @@
+'use client'
 import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
@@ -38,14 +39,11 @@ const GenderChart = () => {
   };
 
   return (
-    <div className="bg-white shadow rounded-lg p-4 mb-4">
-      <div className="flex justify-between items-center mb-2">
+    <div className="bg-white shadow rounded-lg  mb-4">
+      <div className="bg-slate-100 mb-2 p-3 rounded-t">
         <h3 className="font-semibold">No. Of Male & Female Student</h3>
-        <span className="bg-teal-500 text-white px-2 py-1 rounded-full">
-          Total 1280
-        </span>
       </div>
-      <div className="w-[50%] mx-auto">
+      <div className="w-[80%] mx-auto p-4">
         <Pie data={data} options={options} />
       </div>
     </div>
