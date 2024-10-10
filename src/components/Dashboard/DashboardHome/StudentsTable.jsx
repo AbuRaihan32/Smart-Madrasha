@@ -1,7 +1,7 @@
 "use client";
 // import { useQuery } from "@tanstack/react-query";
 // import useAxiosSecure from "../Hooks/useAxiosSecure";
-import studentData from '../../data/students.json';
+import studentData from '../../../data/students.json';
 
 const StudentTable = () => {
   // const axiosSecure = useAxiosSecure();

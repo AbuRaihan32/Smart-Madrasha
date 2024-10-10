@@ -6,14 +6,13 @@ import {
   FaUserCog,
   FaMoon,
 } from "react-icons/fa";
-import SidebarProfile from "./SidebarProfile";
+import SidebarProfile from "../DashboardHome/SidebarProfile";
 
 const Sidebar = () => {
   return (
     <div className="w-1/6 bg-[#273A28] p-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl">
       <SidebarProfile></SidebarProfile>
       <div>
-        <h1 className="text-3xl font-bold text-white mb-5">uifry</h1>
         <nav className="space-y-4">
           <Link
             href="#"

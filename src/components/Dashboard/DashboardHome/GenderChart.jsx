@@ -7,11 +7,11 @@ Chart.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
 const GenderChart = () => {
   const data = {
-    labels: ["Female", "Male"],
+    labels: ["Male", "Female"],
     datasets: [
       {
-        data: [484, 799],
-        backgroundColor: ["#009688", "#00BCD4"], // Teal for Female, Cyan for Male
+        data: [498, 702],
+        backgroundColor: ["#9C27B0", "#00BCD4"], // Purple for Staff, Cyan for Teacher
       },
     ],
   };
@@ -26,12 +26,25 @@ const GenderChart = () => {
         },
         formatter: (value) => value,
       },
+      legend: {
+        display: true,
+        position: "top",
+        labels: {
+          boxWidth: 15,
+          padding: 20,
+        },
+      },
     },
   };
 
   return (
     <div className="bg-white shadow rounded-lg p-4 mb-4">
-      <h3 className="font-semibold">No. of Male & Female Students</h3>
+      <div className="flex justify-between items-center mb-2">
+        <h3 className="font-semibold">No. Of Male & Female Student</h3>
+        <span className="bg-teal-500 text-white px-2 py-1 rounded-full">
+          Total 1280
+        </span>
+      </div>
       <div className="w-[50%] mx-auto">
         <Pie data={data} options={options} />
       </div>
