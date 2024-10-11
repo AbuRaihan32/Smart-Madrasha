@@ -1,3 +1,4 @@
+'use client'
 import BirthdayList from "./BirthdayList";
 import EmployeeAttendance from "./EmployeeAttendance";
 import EmployeeChart from "./EmployeeChart";
@@ -12,18 +13,18 @@ const DashboardHome = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-row gap-4">
-        <div className="w-[70%] space-y-4">
+        <div className={'w-full md:w-[70%] space-y-4'}>
           <StudentTable></StudentTable>
           <SessionBasedStudentChart></SessionBasedStudentChart>
           <BirthdayList></BirthdayList>
         </div>
-        <div className="space-y-4 w-[30%]">
+        <div className={'w-full md:w-[30%] space-y-4'}>
           <GenderChart></GenderChart>
+          <EmployeeChart></EmployeeChart>
+          <SMSChart></SMSChart>
           <EmployeeAttendance></EmployeeAttendance>
           <StudentAttendance></StudentAttendance>
           <BloodGroupChart></BloodGroupChart>
-          <EmployeeChart></EmployeeChart>
-          <SMSChart></SMSChart>
         </div>
       </div>
     </div>

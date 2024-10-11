@@ -12,7 +12,7 @@ const EmployeeChart = () => {
     datasets: [
       {
         data: [9, 71],
-        backgroundColor: ["#9C27B0", "#00BCD4"], // Purple for Staff, Cyan for Teacher
+        backgroundColor: ["#00A12A", "#14B8A6"], // Purple for Staff, Cyan for Teacher
       },
     ],
   };

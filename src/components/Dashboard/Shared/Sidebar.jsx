@@ -7,10 +7,12 @@ import {
   FaMoon,
 } from "react-icons/fa";
 import SidebarProfile from "../DashboardHome/SidebarProfile";
+import useToggle from "@/components/Hooks/useToggle";
 
 const Sidebar = () => {
+  const {toggle} = useToggle();
   return (
-    <div className="w-1/6 bg-[#273A28] p-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl">
+    <div className={`w-1/6 bg-[#273A28] p-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl ${toggle ? 'hidden' : 'block'}`}>
       <SidebarProfile></SidebarProfile>
       <div>
         <nav className="space-y-4">
