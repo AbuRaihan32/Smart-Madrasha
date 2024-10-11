@@ -1,75 +1,135 @@
+'use client'
 import Link from "next/link";
-import {
-  FaHome,
-  FaWallet,
-  FaChartPie,
-  FaUserCog,
-  FaMoon,
-} from "react-icons/fa";
 import SidebarProfile from "../DashboardHome/SidebarProfile";
 import useToggle from "@/components/Hooks/useToggle";
+import { useState } from "react";
 
 const Sidebar = () => {
   const { toggle } = useToggle();
+  const [admissionOpen, setAdmissionOpen] = useState(false);
+
+  // Toggle admission submenu
+  const handleAdmissionToggle = () => {
+    setAdmissionOpen(!admissionOpen);
+  };
+
   return (
     <div
-      className={`w-1/6 bg-[#273A28] py-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl ${
-        toggle ? "hidden" : "block"
+      className={`bg-[#273A28] py-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl ${
+        toggle ? "hidden md:w-1/6 md:block" : "block w-1/6"
       }`}
     >
-      <SidebarProfile></SidebarProfile>
-      <div>
-        <nav className="space-y-4">
-          <details className="dropdown w-full border-t border-b border-[#1d2c1e] hover:bg-[#182c19]">
-            <summary className="m-1 ">Basic Settings</summary>
-            <ul className="menu dropdown-content rounded-box z-[1] p-2 shadow">
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Item 2</a>
-              </li>
-            </ul>
-          </details>
-          <Link
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-[#247983] rounded-lg"
-          >
-            <FaHome className="text-xl" />
-            <span>Dashboard</span>
-          </Link>
-          <Link
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-[#247983] rounded-lg"
-          >
-            <FaChartPie className="text-xl" />
-            <span>Analytics</span>
-          </Link>
-          <Link
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-[#247983] rounded-lg"
-          >
-            <FaWallet className="text-xl" />
-            <span>My Wallet</span>
-          </Link>
-          <Link
-            href="#"
-            className="flex items-center space-x-3 p-2 hover:bg-[#247983] rounded-lg"
-          >
-            <FaUserCog className="text-xl" />
-            <span>Settings</span>
-          </Link>
-        </nav>
-      </div>
-      <div>
+      {/* Profile Picture Component */}
+      <SidebarProfile />
+
+      <nav className="space-y-4">
+        {/* Basic Settings */}
         <Link
           href="#"
-          className="flex items-center space-x-3 mt-10 p-2 hover:bg-[#247983] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
         >
-          <FaMoon className="text-xl" />
-          <span>Dark Mode</span>
+          <span>Basic Settings</span>
         </Link>
-      </div>
+
+        {/* Teacher & Staff */}
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>Teacher & Staff</span>
+        </Link>
+
+        {/* Admission with Submenu */}
+        <div className="border-t border-b border-[#1d2c1e]">
+          <button
+            onClick={handleAdmissionToggle}
+            className="w-full flex items-center justify-between px-2 py-2 hover:bg-[#182c19] rounded-lg"
+          >
+            <span>Admission</span>
+            <span>{admissionOpen ? "▼" : "▶"}</span>
+          </button>
+          {admissionOpen && (
+            <div className="space-y-2 pl-4 pt-2">
+              <Link href="#">
+                <button className="block px-2 py-1 hover:bg-[#247983] rounded-lg">
+                  Admit New Student
+                </button>
+              </Link>
+              <Link href="#">
+                <button className="block px-2 py-1 hover:bg-[#247983] rounded-lg">
+                  Single Re-Admission
+                </button>
+              </Link>
+              <Link href="#">
+                <button className="block px-2 py-1 hover:bg-[#247983] rounded-lg">
+                  Multiple Re-Admission
+                </button>
+              </Link>
+              <Link href="#">
+                <button className="block px-2 py-1 hover:bg-[#247983] rounded-lg">
+                  Online Admission Form
+                </button>
+              </Link>
+            </div>
+          )}
+        </div>
+
+        {/* Other Links */}
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>Students Info</span>
+        </Link>
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>Student Management</span>
+        </Link>
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>Attendances</span>
+        </Link>
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>Accounts</span>
+        </Link>
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>Exam</span>
+        </Link>
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>SMS</span>
+        </Link>
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>Routines</span>
+        </Link>
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>Committee</span>
+        </Link>
+        <Link
+          href="#"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+        >
+          <span>SIKKHALOY INVOICE</span>
+        </Link>
+      </nav>
     </div>
   );
 };
