@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "next/link";
 import SidebarProfile from "../DashboardHome/SidebarProfile";
 import useToggle from "@/components/Hooks/useToggle";
@@ -15,8 +15,8 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`bg-[#273A28] py-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl ${
-        toggle ? "hidden md:w-1/6 md:block" : "block w-1/6"
+      className={`w-1/6 bg-[#273A28] py-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl ${
+        toggle ? "hidden" : "block"
       }`}
     >
       {/* Profile Picture Component */}
