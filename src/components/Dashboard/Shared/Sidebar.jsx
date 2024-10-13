@@ -23,11 +23,11 @@ const Sidebar = () => {
       {/* Profile Picture Component */}
       <SidebarProfile />
 
-      <nav className="space-y-4">
+      <nav className="">
         {/* Basic Settings */}
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>Basic Settings</span>
         </Link>
@@ -35,39 +35,45 @@ const Sidebar = () => {
         {/* Teacher & Staff */}
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>Teacher & Staff</span>
         </Link>
 
         {/* Admission with Submenu */}
-        <div className="border-t border-b border-[#1d2c1e]">
+        <div className="border-t border-b border-t-[#1d2c1e] border-b-[#144918] ">
           <button
             onClick={handleAdmissionToggle}
-            className="w-full flex items-center gap-3 px-2 py-2 hover:bg-[#182c19] rounded-lg"
+            className="w-full flex items-center gap-3 px-2 py-2 hover:bg-[#182c19] "
           >
-            <span>{admissionOpen ? <FaArrowDown></FaArrowDown> : <FaArrowRight></FaArrowRight>}</span>
+            <span>
+              {admissionOpen ? (
+                <FaArrowDown></FaArrowDown>
+              ) : (
+                <FaArrowRight></FaArrowRight>
+              )}
+            </span>
             <span>Admission</span>
           </button>
           {admissionOpen && (
-            <div className="space-y-2 pl-4 pt-2">
+            <div className="">
               <Link href="#">
-                <button className="block px-2 py-1 hover:bg-[#247983] rounded-lg">
+                <button className="pl-6 w-full flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] ">
                   Admit New Student
                 </button>
               </Link>
               <Link href="#">
-                <button className="block px-2 py-1 hover:bg-[#247983] rounded-lg">
+                <button className="pl-6 w-full flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] ">
                   Single Re-Admission
                 </button>
               </Link>
               <Link href="#">
-                <button className="block px-2 py-1 hover:bg-[#247983] rounded-lg">
+                <button className="pl-6 w-full flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] ">
                   Multiple Re-Admission
                 </button>
               </Link>
               <Link href="#">
-                <button className="block px-2 py-1 hover:bg-[#247983] rounded-lg">
+                <button className="pl-6 w-full flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] ">
                   Online Admission Form
                 </button>
               </Link>
@@ -78,55 +84,55 @@ const Sidebar = () => {
         {/* Other Links */}
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>Students Info</span>
         </Link>
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>Student Management</span>
         </Link>
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>Attendances</span>
         </Link>
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>Accounts</span>
         </Link>
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>Exam</span>
         </Link>
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>SMS</span>
         </Link>
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>Routines</span>
         </Link>
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>Committee</span>
         </Link>
         <Link
           href="#"
-          className="flex items-center space-x-3 p-2 hover:bg-[#182c19] rounded-lg"
+          className="flex items-center space-x-3 p-2 hover:bg-[#182c19]  border-t border-b border-t-[#1d2c1e] border-b-[#144918] "
         >
           <span>SIKKHALOY INVOICE</span>
         </Link>
