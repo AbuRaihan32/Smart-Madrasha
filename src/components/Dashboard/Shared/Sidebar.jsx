@@ -3,6 +3,7 @@ import Link from "next/link";
 import SidebarProfile from "../DashboardHome/SidebarProfile";
 import useToggle from "@/components/Hooks/useToggle";
 import { useState } from "react";
+import { FaArrowDown, FaArrowRight } from "react-icons/fa";
 
 const Sidebar = () => {
   const { toggle } = useToggle();
@@ -43,10 +44,10 @@ const Sidebar = () => {
         <div className="border-t border-b border-[#1d2c1e]">
           <button
             onClick={handleAdmissionToggle}
-            className="w-full flex items-center justify-between px-2 py-2 hover:bg-[#182c19] rounded-lg"
+            className="w-full flex items-center gap-3 px-2 py-2 hover:bg-[#182c19] rounded-lg"
           >
+            <span>{admissionOpen ? <FaArrowDown></FaArrowDown> : <FaArrowRight></FaArrowRight>}</span>
             <span>Admission</span>
-            <span>{admissionOpen ? "▼" : "▶"}</span>
           </button>
           {admissionOpen && (
             <div className="space-y-2 pl-4 pt-2">
