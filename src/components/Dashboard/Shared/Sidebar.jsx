@@ -16,14 +16,14 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`w-1/6 bg-[#273A28] py-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl ${
+      className={`w-1/6 bg-[#273A28] py-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl no-scrollbar ${
         toggle ? "hidden" : "block"
       }`}
     >
       {/* Profile Picture Component */}
       <SidebarProfile />
 
-      <nav className="">
+      <nav className=" mt-5">
         {/* Basic Settings */}
         <Link
           href="#"
