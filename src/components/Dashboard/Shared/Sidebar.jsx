@@ -16,8 +16,8 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`w-1/6 bg-[#273A28] py-5 flex flex-col h-screen justify-between fixed text-white overflow-y-auto shadow-2xl no-scrollbar ${
-        toggle ? "hidden" : "block"
+      className={`w-1/6 bg-[#273A28] py-5 h-screen hidden justify-between fixed text-white overflow-y-auto shadow-2xl no-scrollbar md:flex flex-col ${
+        toggle ? "md:hidden" : "md:flex"
       }`}
     >
       {/* Profile Picture Component */}

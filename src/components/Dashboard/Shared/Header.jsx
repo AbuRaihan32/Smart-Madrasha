@@ -2,6 +2,7 @@ import { IoMdCall } from "react-icons/io";
 import { MdLocationPin, MdMenu } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 import useToggle from "@/components/Hooks/useToggle";
+import SidebarForDrawer from "./SidebarForDrawer";
 
 const Header = () => {
   const { setToggle, toggle } = useToggle();
@@ -9,14 +10,26 @@ const Header = () => {
   return (
     <header
       className={`${
-        toggle ? " w-full" : "w-5/6"
+        toggle ? " w-full" : "w-full md:w-5/6"
       } bg-[#00A12A] p-5 flex-col md:flex-row flex gap-4 fixed right-0 text-white overflow-y-auto mb-3`}
     >
-      <div
-        onClick={() => setToggle(!toggle)}
-        className="text-white text-4xl cursor-pointer"
-      >
-        <MdMenu></MdMenu>
+      <div className="text-white text-4xl cursor-pointer">
+        <div
+          onClick={() => setToggle(!toggle)}
+          className="hidden md:block text-red-600"
+        >
+          <MdMenu></MdMenu>
+        </div>
+        <div className="drawer">
+          <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content block md:hidden">
+            {/* Page content here */}
+            <label htmlFor="my-drawer" className="">
+              <MdMenu></MdMenu>
+            </label>
+          </div>
+          <SidebarForDrawer></SidebarForDrawer>
+        </div>
       </div>
       <div className="flex-1">
         <h2 className="text-xl md:text-2xl font-bold text-center">
