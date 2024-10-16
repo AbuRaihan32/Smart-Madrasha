@@ -11,12 +11,12 @@ const Header = () => {
     <header
       className={`${
         toggle ? " w-full" : "w-full md:w-5/6"
-      } bg-[#00A12A] p-5 flex-col md:flex-row flex gap-4 fixed right-0 text-white overflow-y-auto mb-3`}
+      } bg-[#00A12A] p-5 flex-col md:flex-row flex gap-4 md:fixed right-0 text-white overflow-y-auto mb-3`}
     >
       <div className="text-white text-4xl cursor-pointer">
         <div
           onClick={() => setToggle(!toggle)}
-          className="hidden md:block text-red-600"
+          className="hidden md:block"
         >
           <MdMenu></MdMenu>
         </div>
@@ -33,8 +33,7 @@ const Header = () => {
       </div>
       <div className="flex-1">
         <h2 className="text-xl md:text-2xl font-bold text-center">
-          আলহাজ্ব আবুল কাশেম ও মরহুমা ফাতেমা খাতুন মারকাযুল কুরআন মাদরাসা
-          (2024-25)
+          আলহাজ্ব আবুল কাশেম ও মরহুমা ফাতেমা খাতুন মারকাযুল কুরআন মাদরাসা (2024-25)
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-2">
           <p className="flex gap-1 items-center">
