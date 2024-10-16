@@ -2,11 +2,11 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa";
 
-const Basic = () => {
-  const [Basic, setBasic] = useState(false);
+const SoftwareInvoice = () => {
+  const [SoftwareInvoice, setSoftwareInvoice] = useState(false);
 
   const handleToggle = () => {
-    setBasic(!Basic);
+    setSoftwareInvoice(!SoftwareInvoice);
   };
 
   return (
@@ -16,15 +16,15 @@ const Basic = () => {
       className="w-full flex items-center gap-1 px-2 py-2 hover:bg-[#0f1d10] "
     >
       <span>
-        {Basic ? (
+        {SoftwareInvoice ? (
           <FaArrowDown></FaArrowDown>
         ) : (
           <FaArrowRight></FaArrowRight>
         )}
       </span>
-      <span>Basic Settings</span>
+      <span>Software Invoice </span>
     </button>
-    {Basic && (
+    {SoftwareInvoice && (
       <div className="">
         <Link href="#">
           <button className="pl-6 w-full flex items-center space-x-3 p-2 hover:bg-[#0f1d10]  border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
@@ -53,4 +53,4 @@ const Basic = () => {
   );
 };
 
-export default Basic;
+export default SoftwareInvoice;
