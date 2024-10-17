@@ -44,7 +44,7 @@ Biddyanoy.com is an educational institution management service designed to help 
 ## used npm packages:
 1. - [@AOS-Package](https://www.npmjs.com/package/aos) 
 2. - [@React-Hook-form](https://react-hook-form.com/) 
-3. - [@Lottie-react](https://react-hook-form.com/)
+3. - [@Lottie-react](https://lottiefiles.com/free-animations/react)
 
 
 
