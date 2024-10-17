@@ -14,23 +14,23 @@ const Header = () => {
       } bg-[#00A12A] p-5 flex-col md:flex-row flex gap-4 absolute right-0 text-white overflow-y-auto mb-3`}
     >
       <div className="text-white text-4xl cursor-pointer">
-        <div
-          onClick={() => setToggle(!toggle)}
-          className="hidden md:block"
-        >
+        <div onClick={() => setToggle(!toggle)} className="hidden md:block">
           <MdMenu></MdMenu>
         </div>
+
+        {/* drawer */}
         <div className="drawer">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content block md:hidden">
-            {/* Page content here */}
             <label htmlFor="my-drawer" className="">
               <MdMenu></MdMenu>
             </label>
           </div>
-          <SidebarForDrawer></SidebarForDrawer>
+            <SidebarForDrawer></SidebarForDrawer>
         </div>
       </div>
+
+      {/* header content */}
       <div className="flex-1">
         <h2 className="text-xl md:text-2xl font-bold text-center">
           আলহাজ্ব আবুল কাশেম ও মরহুমা ফাতেমা খাতুন মারকাযুল কুরআন মাদরাসা (2024-25)

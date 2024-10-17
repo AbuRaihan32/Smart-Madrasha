@@ -10,13 +10,13 @@ const DashboardFooter = () => {
       <div className="container mx-auto text-center">
         {/* Top buttons */}
         <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 mb-6 px-4">
-          <button className="border-2 border-white text-white py-2 px-6 shadow-xl hover:shadow-2xl">
+          <button className="border-2 border-white text-white py-2 px-6 hover:shadow-xl shadow-2xl">
             SHARE EXPERIENCE
           </button>
-          <button className="border-2 border-white text-white py-2 px-6 shadow-xl hover:shadow-2xl">
+          <button className="border-2 border-white text-white py-2 px-6 hover:shadow-xl shadow-2xl">
             SUPPORT: 09638 66 99 66, 01739 144141
           </button>
-          <button className="border-2 border-white text-white py-2 px-6 shadow-xl hover:shadow-2xl">
+          <button className="border-2 border-white text-white py-2 px-6 hover:shadow-xl shadow-2xl">
             MAKE PAYMENT
           </button>
         </div>

@@ -1,16 +1,15 @@
-import React from "react";
-import Basic from "./SingleLinks/Basic";
-import Admission from "./SingleLinks/Admission";
-import Teacher from "./SingleLinks/Teacher";
-import StudentsInfo from "./SingleLinks/StudentsInfo";
-import StudentsManage from "./SingleLinks/StudentManage";
-import Attendances from "./SingleLinks/Attendances";
-import Accounts from "./SingleLinks/Accounts";
-import Exam from "./SingleLinks/Exam";
-import SMS from "./SingleLinks/SMS";
-import Routines from "./SingleLinks/Routines";
-import Committee from "./SingleLinks/Committee";
-import SoftwareInvoice from "./SingleLinks/SoftwareInvoice";
+import Accounts from "./SingleLinks/Accounts/Accounts";
+import Admission from "./SingleLinks/Admission/Admission";
+import Attendances from "./SingleLinks/Attendances/Attendances";
+import Basic from "./SingleLinks/Basic/Basic";
+import Committee from "./SingleLinks/Committee/Committee";
+import Exam from "./SingleLinks/Exam/Exam";
+import Routines from "./SingleLinks/Routines/Routines";
+import SMS from "./SingleLinks/SMS/SMS";
+import SoftwareInvoice from "./SingleLinks/Softeare/SoftwareInvoice";
+import StudentsManage from "./SingleLinks/StudentManage/StudentManage";
+import StudentsInfo from "./SingleLinks/StudentsInfo/StudentsInfo";
+import Teacher from "./SingleLinks/Teachers/Teacher";
 
 const NavLinksForSidebar = () => {
   return (

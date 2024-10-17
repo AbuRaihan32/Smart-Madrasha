@@ -13,7 +13,7 @@ const SidebarForDrawer = () => {
         ></label>
 
         <div
-          className={`w-[60%] sm:w-3/6 bg-[#182c19] py-5 h-screen justify-between fixed text-white overflow-y-auto shadow-2xl no-scrollbar md:flex flex-col text-[16px]`}
+          className={`w-[60%] sm:w-3/6 bg-[#182c19] pt-5 pb-10 h-screen justify-between fixed text-white overflow-y-auto shadow-2xl no-scrollbar md:flex flex-col text-[16px]`}
         >
           {/* Profile Picture Component */}
           <SidebarProfile />
