@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<!-- Information i added -->
 
-First, run the development server:
+# Biddyanoy.com
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Biddyanoy.com is an educational institution management service designed to help institutes save time and improve management efficiency. It is a simple yet powerful, one-point integrated platform that connects all departments within an institution and features technologically advanced modules.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live Site URL
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+[Visit Biddyanoy.com](https://biddyanoy.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Daily Attendance System**: Integrated with RFID and fingerprint devices.
+- **Automated SMS Notifications**: Keeps parents, teachers, and students updated via automated SMS.
+- **Student Fees & Payroll Management**: User-friendly interface for managing student fees and payroll.
+- **Customizable Exam & Results Module**: Includes graphical explanations of student results.
+- **Secure User Authentication**: Role-based access for admins, teachers, students, and parents.
+- **Responsive Design**: Works across all device sizes for a seamless user experience.
+ 
+## Installation Steps
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/AbuRaihan32/Biddyanoy.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd folder-name
+    ```
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
+ 
+ <br/>
 
-## Deploy on Vercel
+## used technologies:
+   1. Next.js     2. javaScript    3. tailwindCss      4. react-router-dom    5. axios    6. tanstack query
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## used npm packages:
+1. - [@AOS-Package](https://www.npmjs.com/package/aos) 
+2. - [@React-Hook-form](https://react-hook-form.com/) 
+3. - [@Lottie-react](https://react-hook-form.com/)
+3. - [@lottie-react](https://lottiefiles.com/free-animations/react) 
+3. - [@lottie-react](https://lottiefiles.com/free-animations/react)
+
+
