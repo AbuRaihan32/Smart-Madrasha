@@ -1,7 +1,8 @@
-import Link from "next/link";
 import React, { useState } from "react";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa";
 import ClassManagement from "./ClassManagement";
+import SubAdminManagement from "./SubAdminManage";
+import Others from "./Others";
 
 const Basic = () => {
   const [Basic, setBasic] = useState(false);
@@ -22,23 +23,16 @@ const Basic = () => {
         <span>Basic Settings</span>
       </button>
       {Basic && (
-        <div className="">
+        <div className="ml-5">
+          {/* Class Management */}
           <ClassManagement></ClassManagement>
-          <Link href="#">
-            <button className="pl-6 w-full flex items-center space-x-3 p-2 hover:bg-[#0f1d10]  border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
-              Single Re-Admission
-            </button>
-          </Link>
-          <Link href="#">
-            <button className="pl-6 w-full flex items-center space-x-3 p-2 hover:bg-[#0f1d10]  border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
-              Multiple Re-Admission
-            </button>
-          </Link>
-          <Link href="#">
-            <button className="pl-6 w-full flex items-center space-x-3 p-2 hover:bg-[#0f1d10]  border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
-              Online Admission Form
-            </button>
-          </Link>
+
+          {/* Sub Admin Manage */}
+
+          <SubAdminManagement></SubAdminManagement>
+
+          {/* Others */}
+          <Others></Others>
         </div>
       )}
     </div>

@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        toggle ? " w-full" : "w-full md:w-5/6"
+        toggle ? " w-full" : "w-full md:w-[81%]"
       } bg-[#00A12A] p-5 flex-col md:flex-row flex gap-4 absolute right-0 text-white overflow-y-auto mb-3`}
     >
       <div className="text-white text-4xl cursor-pointer">

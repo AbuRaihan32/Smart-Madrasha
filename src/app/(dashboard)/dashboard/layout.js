@@ -26,7 +26,7 @@ export default function DashboardLayout({ children }) {
           </nav>
           <div
             className={`${
-              toggle ? " w-full" : "w-full md:w-5/6"
+              toggle ? " w-full" : "w-full md:w-[81%]"
             } absolute right-0 top-20 `}
             >
             <div className="p-3 pt-48 md:pt-10 overflow-auto bg-[#EEF5F9]">

@@ -2,11 +2,11 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa";
 
-const ClassManagement = () => {
-  const [classManagement, setClassManagement] = useState(false);
+const Others = () => {
+  const [Others, setOthers] = useState(false);
 
   const handleClassManageToggle = () => {
-    setClassManagement(!classManagement);
+    setOthers(!Others);
   };
 
   return (
@@ -16,15 +16,11 @@ const ClassManagement = () => {
         className="w-full flex items-center gap-1 px-2 py-2 hover:bg-[#0f1d10] "
       >
         <span>
-          {classManagement ? (
-            <FaArrowDown></FaArrowDown>
-          ) : (
-            <FaArrowRight></FaArrowRight>
-          )}
+          {Others ? <FaArrowDown></FaArrowDown> : <FaArrowRight></FaArrowRight>}
         </span>
-        <span>class Management </span>
+        <span> Others Setting </span>
       </button>
-      {classManagement && (
+      {Others && (
         <div className="ml-5">
           <Link href="#">
             <button className="w-full flex items-center text-[#C9E7ED] space-x-3 p-2 hover:bg-[#0f1d10]  border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
@@ -47,4 +43,4 @@ const ClassManagement = () => {
   );
 };
 
-export default ClassManagement;
+export default Others;
