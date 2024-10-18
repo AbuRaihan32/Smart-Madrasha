@@ -22,7 +22,7 @@ const Others = () => {
       </button>
       {Others && (
         <div className="">
-          <Link href="#">
+          <Link href="/dashboard/add_all_subjects">
             <button className="pl-5 w-full flex items-center text-[#C9E7ED] space-x-3 p-2 hover:bg-[#0f1d10]  hover:border-r-[4px] hover:border-r-[#00A12A] border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
               Add All Subject
             </button>
