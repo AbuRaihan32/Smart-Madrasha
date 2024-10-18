@@ -1,5 +1,5 @@
 'use client'
-import { ToggleContext } from "@/app/(dashboard)/dashboard/layout";
+import { ToggleContext } from "@/app/dashboard/layout";
 import { useContext } from "react";
 
 const useToggle = () => {

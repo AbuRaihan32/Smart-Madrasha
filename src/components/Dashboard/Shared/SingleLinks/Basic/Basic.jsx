@@ -15,7 +15,7 @@ const Basic = () => {
     <div className="border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
       <button
         onClick={handleToggle}
-        className="w-full flex items-center gap-1 px-2 py-2 hover:bg-[#0f1d10] "
+        className="w-full flex items-center gap-1 px-2 py-2 hover:bg-[#0f1d10]  hover:border-r-[4px] hover:border-r-[#00A12A]"
       >
         <span>
           {Basic ? <FaArrowDown></FaArrowDown> : <FaArrowRight></FaArrowRight>}
