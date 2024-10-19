@@ -34,7 +34,7 @@ const AddAllSubjects = () => {
                 <th>Subject Name</th>
                 <th>Subject Serial</th>
                 <th>
-                  <div className="flex items-center justify-around">
+                  <div className="flex items-center justify-around gap-3">
                     <span>Edit</span> <span>Delete</span>
                   </div>
                 </th>

@@ -58,11 +58,11 @@ const AllSubjectsRow = ({ index, subject }) => {
           </div>
         </td>
         <td className="w-[10%] ">
-          <input defaultValue={index} type="text" name="serialNumber" className="border-2 rounded w-full p-[3px] text-center" />
+          <input defaultValue={index} type="text" name="serialNumber" className="border outline-1 outline-green-600 border-black rounded w-full p-[3px] text-center" />
         </td>
 
         <td className="w-[20%] ">
-          <div className="w-full flex items-center justify-around ">
+          <div className="w-full flex items-center justify-around gap-3">
             <button
               onClick={handleUpdate}
               className="p-3 border border-black rounded-full hover:bg-[#00A12A] hover:text-white hover:border-white transition-all duration-200"
