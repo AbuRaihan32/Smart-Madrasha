@@ -1,14 +1,12 @@
-'use client'
+"use client";
 import { useForm } from "react-hook-form";
 import { CiEdit } from "react-icons/ci";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { useRef } from "react";
 import Swal from "sweetalert2";
-import Image from "next/image";
 
 const AllSubjectsRow = ({ index, subject }) => {
   const modalRef1 = useRef(null);
-
 
   const { register, handleSubmit } = useForm();
 
@@ -21,13 +19,12 @@ const AllSubjectsRow = ({ index, subject }) => {
   const onSubmit = (data) => {
     console.log(data);
 
-          Swal.fire({
-            title: "Updated",
-            text: "User has been updated.",
-            icon: "success",
-          });
-          modalRef1.current.close();
-
+    Swal.fire({
+      title: "Updated",
+      text: "User has been updated.",
+      icon: "success",
+    });
+    modalRef1.current.close();
   };
 
   // ! handle delete
@@ -42,55 +39,43 @@ const AllSubjectsRow = ({ index, subject }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-       
-              Swal.fire({
-                title: "Deleted",
-                text: "Your food has been Deleted.",
-                icon: "success",
-              });
+        Swal.fire({
+          title: "Deleted",
+          text: "Your food has been Deleted.",
+          icon: "success",
+        });
       }
     });
   };
 
   return (
     <>
-      <tr>
-        <th>{index + 1}</th>
-        <td>
-          <div className="flex items-center gap-3">
-            <div className="avatar">
-              <div className="mask mask-squircle w-12 h-12">
-                <Image
-                  src={"/final-profile.jpg"}
-                  alt="Avatar Tailwind CSS Component"
-                  width={40}
-                  height={40}
-                />
-              </div>
-            </div>
-            <div>
-              <div className="font-bold">{subject.subjectName}</div>
-            </div>
+      <tr className="px-10 hover:bg-slate-50 transition-all duration-200">
+        <td className="w-[5%] text-center">{index}</td>
+        <td className="w-[50%] ">
+          <div>
+            <div className="font-bold">{subject.subjectName}</div>
           </div>
         </td>
-        <td>Email</td>
-        <td>Status</td>
-        <td> Role </td>
-        <td>
-          <button
-            onClick={ handleUpdate}
-            className="btn btn-circle btn-outline"
-          >
-            <CiEdit className="text-xl"></CiEdit>
-          </button>
+        <td className="w-[10%] ">
+          <input defaultValue={index} type="text" name="serialNumber" className="border-2 rounded w-full p-[3px] text-center" />
         </td>
-        <td>
-          <button
-            onClick={handleDelete}
-            className="btn btn-circle btn-outline"
-          >
-            <RiDeleteBin6Line></RiDeleteBin6Line>
-          </button>
+
+        <td className="w-[20%] ">
+          <div className="w-full flex items-center justify-around ">
+            <button
+              onClick={handleUpdate}
+              className="p-3 border border-black rounded-full hover:bg-[#00A12A] hover:text-white hover:border-white transition-all duration-200"
+            >
+              <CiEdit className="text-xl"></CiEdit>
+            </button>
+            <button
+              onClick={handleDelete}
+              className="p-3 border border-black rounded-full hover:bg-[#00A12A] hover:text-white hover:border-white transition-all duration-200"
+            >
+              <RiDeleteBin6Line className="text-xl"></RiDeleteBin6Line>
+            </button>
+          </div>
         </td>
       </tr>
 
@@ -114,9 +99,7 @@ const AllSubjectsRow = ({ index, subject }) => {
                   <p className="text-xs font-semibold ml-1 text-[#1e5744]">
                     Please click on the field After Change
                   </p>
-                  <div
-                    className="absolute right-2 top-[4px] text-xl"
-                  >
+                  <div className="absolute right-2 top-[4px] text-xl">
                     <span className="p-[6px] bg-gradient-to-r from-[#24BAD2] to-[#31EDAF] rounded-md text-xs text-white cursor-pointer">
                       {" "}
                       Change{" "}
@@ -136,9 +119,7 @@ const AllSubjectsRow = ({ index, subject }) => {
                   <p className="text-xs font-semibold ml-1 text-[#1e5744]">
                     Please click on the field After Change
                   </p>
-                  <div
-                    className="absolute right-2 top-[4px] text-xl"
-                  >
+                  <div className="absolute right-2 top-[4px] text-xl">
                     <span className="p-[6px] bg-gradient-to-r from-[#24BAD2] to-[#31EDAF] rounded-md text-xs text-white cursor-pointer">
                       {" "}
                       Change{" "}
@@ -179,6 +160,5 @@ const AllSubjectsRow = ({ index, subject }) => {
     </>
   );
 };
-
 
 export default AllSubjectsRow;
