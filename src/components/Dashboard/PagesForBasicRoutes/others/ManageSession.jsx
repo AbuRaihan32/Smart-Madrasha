@@ -61,7 +61,7 @@ const ManageSession = () => {
                   <th>Session Year</th>
                   <th>Start Date</th>
                   <th>End Date</th>
-                  <th>End Date</th>
+                  <th>Status</th>
                   <th>
                     <div className="flex items-center justify-around gap-3">
                       <span>Edit</span> <span>Delete</span>

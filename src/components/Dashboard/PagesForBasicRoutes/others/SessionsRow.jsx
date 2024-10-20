@@ -68,12 +68,7 @@ const SessionsRow = ({ index, session }) => {
           </div>
         </td>
         <td className="w-[10%] ">
-          <input
-            defaultValue={index}
-            type="text"
-            name="serialNumber"
-            className="border-2 outline-1 outline-[#0098A8]  rounded w-full p-[3px] text-center"
-          />
+        <input type="checkbox" name="status" className="w-5 h-5 accent-[#0098A8]" />
         </td>
 
         <td className="w-[20%] ">

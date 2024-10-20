@@ -1,7 +1,7 @@
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import { GrDocumentUser } from "react-icons/gr";
 import LottieFile from "@/components/Shared/LottieFile";
-import Report from "../../../../public/Report.json";
+import Report from "../../../../public/LottieJson/Report.json";
 
 const StudentReport = () => {
   return (

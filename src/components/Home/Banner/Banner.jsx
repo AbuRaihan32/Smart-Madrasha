@@ -1,5 +1,5 @@
 import React from "react";
-import table from '../../../../public/table.json'
+import table from '../../../../public/LottieJson/table.json'
 import LottieFile from "@/components/Shared/LottieFile";
 import Button from "@/components/Shared/Button";
 

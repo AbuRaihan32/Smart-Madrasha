@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Not from "../../public/NotFound.json";
+import Not from "../../public/LottieJson/NotFound.json";
 import Lottie from "lottie-react";
 import Button from "@/components/Shared/Button";
 
