@@ -200,7 +200,7 @@ const InstitutionInfoForm = () => {
             </button>
             <button
               type="submit"
-              className="bg-green-500 text-white px-4 py-2 rounded"
+              className="bg-[#0098A8] text-white px-4 py-2 rounded"
             >
               Update
             </button>

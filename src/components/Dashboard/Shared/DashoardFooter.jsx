@@ -5,7 +5,7 @@ import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 const DashboardFooter = () => {
   return (
     <footer
-      className={`w-full bg-[#00A12A] pt-8 flex-col md:flex-row flex gap-4  right-0 text-white overflow-y-auto`}
+      className={`w-full bg-[#0098A8] pt-10 flex-col md:flex-row flex gap-4  right-0 text-white overflow-y-auto`}
     >
       <div className="container mx-auto text-center">
         {/* Top buttons */}
@@ -26,19 +26,19 @@ const DashboardFooter = () => {
           <div className="flex justify-center items-center gap-3 mb-3 sm:mb-0">
             <a
               href="#"
-              className="text-white text-2xl bg-[#00A12A] shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] hover:shadow-lg p-3 rounded-full"
+              className="text-white text-2xl bg-[#0098A8] shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] hover:shadow-lg p-3 rounded-full"
             >
               <FaFacebook></FaFacebook>
             </a>
             <a
               href="#"
-              className="text-white text-2xl bg-[#00A12A] shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] hover:shadow-lg p-3 rounded-full"
+              className="text-white text-2xl bg-[#0098A8] shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] hover:shadow-lg p-3 rounded-full"
             >
               <FaLinkedin></FaLinkedin>
             </a>
             <a
               href="#"
-              className="text-white text-2xl bg-[#00A12A] shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] hover:shadow-lg p-3 rounded-full"
+              className="text-white text-2xl bg-[#0098A8] shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] hover:shadow-lg p-3 rounded-full"
             >
               <FaYoutube></FaYoutube>
             </a>
@@ -59,7 +59,7 @@ const DashboardFooter = () => {
         </div>
 
         {/* Copyright text */}
-        <div className="bg-[#008122] text-white">
+        <div className="bg-[#186f79] text-white">
           <p className="text-center py-5">
             © {new Date().getFullYear()} Abu Raihan Mahfuz. All rights reserved.
           </p>

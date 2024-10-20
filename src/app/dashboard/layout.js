@@ -29,7 +29,7 @@ export default function DashboardLayout({ children }) {
               toggle ? " w-full" : "w-full md:w-[81%]"
             } absolute right-0 top-20 `}
             >
-            <div className="p-3 pt-48 md:pt-10 overflow-auto bg-[#EEF5F9]">
+            <div className="p-5 pt-48 md:pt-10 overflow-auto bg-[#EEF5F9]">
               {children}
             </div>
             <DashboardFooter></DashboardFooter>

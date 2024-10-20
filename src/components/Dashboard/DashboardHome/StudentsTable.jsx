@@ -1,7 +1,7 @@
 "use client";
 // import { useQuery } from "@tanstack/react-query";
 // import useAxiosSecure from "../Hooks/useAxiosSecure";
-import studentData from '../../../data/students.json';
+import studentData from "../../../data/students.json";
 
 const StudentTable = () => {
   // const axiosSecure = useAxiosSecure();
@@ -40,7 +40,7 @@ const StudentTable = () => {
   // ! Render the table
   return (
     <div className="bg-white shadow rounded-lg sm:p-4">
-      <div className="flex justify-between items-center bg-green-600 text-white p-2 rounded-t-lg">
+      <div className="flex justify-between items-center bg-[#0098A8] text-white p-2 rounded-t-lg">
         <h3 className="font-semibold">Old & New Students of Current Session</h3>
         <span>Total Students: {studentData?.total_students}</span>
       </div>

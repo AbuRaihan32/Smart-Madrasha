@@ -5,7 +5,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { useRef } from "react";
 import Swal from "sweetalert2";
 
-const AllSubjectsRow = ({ index, subject }) => {
+const SessionsRow = ({ index, session }) => {
   const modalRef1 = useRef(null);
 
   const { register, handleSubmit } = useForm();
@@ -52,9 +52,19 @@ const AllSubjectsRow = ({ index, subject }) => {
     <>
       <tr className="px-10 hover:bg-green-100 border-b">
         <td className="w-[5%] text-center font-semibold">{index}</td>
-        <td className="w-[50%] ">
+        <td className="w-[15%]  ">
           <div>
-            <div className="font-bold">{subject.subjectName}</div>
+            <div className="font-bold">{session.SessionYear}</div>
+          </div>
+        </td>
+        <td className="w-[15%] ">
+          <div>
+            <div className="font-bold">{session.StartDate}</div>
+          </div>
+        </td>
+        <td className="w-[20%] ">
+          <div>
+            <div className="font-bold">{session.EndDate}</div>
           </div>
         </td>
         <td className="w-[10%] ">
@@ -166,4 +176,4 @@ const AllSubjectsRow = ({ index, subject }) => {
   );
 };
 
-export default AllSubjectsRow;
+export default SessionsRow;

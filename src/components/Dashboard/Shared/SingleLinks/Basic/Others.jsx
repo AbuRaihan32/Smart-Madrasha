@@ -18,7 +18,7 @@ const Others = () => {
         <span>
           {Others ? <FaArrowDown></FaArrowDown> : <FaArrowRight></FaArrowRight>}
         </span>
-        <span> Others Setting </span>
+        <span> Others Setting </span> 
       </button>
       {Others && (
         <div className="">
@@ -27,7 +27,7 @@ const Others = () => {
               Add All Subject
             </button>
           </Link>
-          <Link href="#">
+          <Link href="/dashboard/manage-session">
             <button className="pl-5 w-full flex items-center text-[#C9E7ED] space-x-3 p-2 hover:bg-[#0f1d10]  hover:border-r-[4px] hover:border-r-[#00A12A] border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
               Manage Session
             </button>

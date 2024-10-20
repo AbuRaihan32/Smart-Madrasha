@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
@@ -43,7 +43,7 @@ const SMSChart = () => {
 
   return (
     <div className="bg-white shadow rounded-lg p-4 mb-4">
-      <div className="bg-green-600 text-white p-2 rounded-t-lg flex justify-between">
+      <div className="bg-[#0098A8] text-white p-2 rounded-t-lg flex justify-between">
         <span>SMS</span>
       </div>
       <div className="flex justify-around mt-4 mb-4">
