@@ -26,19 +26,19 @@ const SubAdminManagement = () => {
       </button>
       {SubAdminManage && (
         <div className="">
-          <Link href="#">
+          <Link href="/dashboard/create-sub-admin">
             <button className="pl-5 w-full flex items-center text-[#C9E7ED] space-x-3 p-2 hover:bg-[#0f1d10]  hover:border-r-[4px] hover:border-r-[#00A12A] border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
-              Add All Subject
+              Create Sub Admin
             </button>
           </Link>
-          <Link href="#">
+          <Link href="/dashboard/manage-page-access">
             <button className="pl-5 w-full flex items-center text-[#C9E7ED] space-x-3 p-2 hover:bg-[#0f1d10]  hover:border-r-[4px] hover:border-r-[#00A12A] border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
-              Manage Session
+              Manage Page Access
             </button>
           </Link>
-          <Link href="#">
+          <Link href="/dashboard/active-deActive">
             <button className="pl-5 w-full flex items-center text-[#C9E7ED] space-x-3 p-2 hover:bg-[#0f1d10]  hover:border-r-[4px] hover:border-r-[#00A12A] border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
-              Institution Info
+              Active & DeActive 
             </button>
           </Link>
         </div>
