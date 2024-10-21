@@ -31,7 +31,7 @@ const ClassManagement = () => {
               Add Class, Group, <br /> Section, Shift
             </button>
           </Link>
-          <Link href="#">
+          <Link href="/dashboard/specify-group-section-shift-for-class">
             <button className="pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#0f1d10]  hover:border-r-[4px] hover:border-r-[#00A12A] border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
               Specify- Group Section <br /> Shift For Class
             </button>

@@ -1,3 +1,4 @@
+import Button from "@/components/Shared/Button";
 import React from "react";
 import { FaPlus } from "react-icons/fa";
 
@@ -27,6 +28,8 @@ const AddClassGroupSectionShift = () => {
           </button>
         </div>
       </div>
+
+      {/* main content */}
       <div className="bg-white mt-10 md:mx-5 md:my-5 p-5 rounded-lg min-h-10 shadow-sm ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-5 border rounded-lg shadow-lg">
@@ -35,11 +38,9 @@ const AddClassGroupSectionShift = () => {
               name=""
               id=""
               placeholder="Enter Group Name"
-              className="border-b p-3 outline-0 w-full"
+              className="border-b p-3 outline-0 w-full mb-3"
             />
-            <button className="flex items-center gap-2 p-2 sm:px-5 bg-[#0098A8] hover:bg-[#23757e] rounded-md text-white btn mt-3">
-              Add Group
-            </button>
+            <Button text={"Add Group"}></Button>
           </div>
           <div className="p-5 border rounded-lg shadow-lg">
             <input
@@ -47,11 +48,9 @@ const AddClassGroupSectionShift = () => {
               name=""
               id=""
               placeholder="Enter Section Name"
-              className="border-b p-3 outline-0 w-full"
+              className="border-b p-3 outline-0 w-full mb-3"
             />
-            <button className="flex items-center gap-2 p-2 sm:px-5 bg-[#0098A8] hover:bg-[#23757e] rounded-md text-white btn mt-3">
-              Add Section
-            </button>
+            <Button text={"Add Section"}></Button>
           </div>
           <div className="p-5 border rounded-lg shadow-lg">
             <input
@@ -59,11 +58,9 @@ const AddClassGroupSectionShift = () => {
               name=""
               id=""
               placeholder="Enter Shift Name"
-              className="border-b p-3 outline-0 w-full"
+              className="border-b p-3 outline-0 w-full mb-3"
             />
-            <button className="flex items-center gap-2 p-2 sm:px-5 bg-[#0098A8] hover:bg-[#23757e] rounded-md text-white btn mt-3">
-              Add Shift
-            </button>
+            <Button text={"Add Shift"}></Button>
           </div>
           <div className="p-5 border rounded-lg shadow-lg">
             <input
@@ -71,11 +68,9 @@ const AddClassGroupSectionShift = () => {
               name=""
               id=""
               placeholder="Enter Class Name"
-              className="border-b p-3 outline-0 w-full"
+              className="border-b p-3 outline-0 w-full mb-3"
             />
-            <button className="flex items-center gap-2 p-2 sm:px-5 bg-[#0098A8] hover:bg-[#23757e] rounded-md text-white btn mt-3">
-              Add Class
-            </button>
+            <Button text={"Add Class"}></Button>
           </div>
         </div>
       </div>
