@@ -115,7 +115,7 @@ const CreateSubAdmin = () => {
 
         {/* Submit Button */}
         <div className="md:col-span-2">
-          <Button text={"Submit"}></Button>
+          <Button text={"Create Admin"}></Button>
         </div>
       </form>
     </div>
