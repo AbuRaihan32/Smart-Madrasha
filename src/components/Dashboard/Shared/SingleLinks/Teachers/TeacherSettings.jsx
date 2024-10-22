@@ -50,10 +50,10 @@ const TeacherSetting = () => {
               Add Staff
             </button>
           </Link>
-          <Link href="#">
+          <Link href="/dashboard/employee-list">
             <button
               className={`${
-                pathName.includes("test") &&
+                pathName.includes("employee-list") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
               } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
