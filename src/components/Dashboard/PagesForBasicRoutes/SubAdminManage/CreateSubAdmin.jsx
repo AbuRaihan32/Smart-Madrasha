@@ -3,6 +3,7 @@ import Button from "@/components/Shared/Button";
 const CreateSubAdmin = () => {
   return (
     <div className="bg-white md:mx-5 md:my-5 p-5 rounded-lg min-h-10 shadow-sm ">
+       <h1 className="text-2xl font-bold mb-6">Create Sub Admin</h1>
       <form className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* First Name */}
         <div>

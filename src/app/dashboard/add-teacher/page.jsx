@@ -1,4 +1,4 @@
-import AddTeacher from "@/components/Dashboard/PagesAboutTeache&Staff/Setting/AddTeacher";
+import AddTeacher from "@/components/Dashboard/PagesAboutTeacher&Staff/Setting/AddTeacher";
 import React from "react";
 
 const page = () => {
