@@ -12,10 +12,10 @@ const Basic = () => {
   };
 
   return (
-    <div className="border-t border-b border-t-[#112012] border-b-[#0c3a0e] ">
+    <div className="border-t border-b border-t-[#05171a] border-b-[#0b3236] ">
       <button
         onClick={handleToggle}
-        className="w-full flex items-center gap-1 px-2 py-2 hover:bg-[#0f1d10]  hover:border-r-[4px] hover:border-r-[#00A12A]"
+        className="w-full flex items-center gap-1 px-2 py-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8]"
       >
         <span>
           {Basic ? <FaArrowDown></FaArrowDown> : <FaArrowRight></FaArrowRight>}
@@ -28,7 +28,6 @@ const Basic = () => {
           <ClassManagement></ClassManagement>
 
           {/* Sub Admin Manage */}
-
           <SubAdminManagement></SubAdminManagement>
 
           {/* Others */}

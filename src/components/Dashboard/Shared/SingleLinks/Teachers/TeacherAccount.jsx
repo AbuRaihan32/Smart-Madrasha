@@ -4,12 +4,12 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa";
 
-const ClassManagement = () => {
+const TeacherAccount = () => {
   const pathName = usePathname();
-  const [classManagement, setClassManagement] = useState(false);
+  const [TeacherAccount, setTeacherAccount] = useState(false);
 
   const handleClassManageToggle = () => {
-    setClassManagement(!classManagement);
+    setTeacherAccount(!TeacherAccount);
   };
 
   return (
@@ -19,15 +19,15 @@ const ClassManagement = () => {
         className="w-full flex items-center gap-1 px-2 py-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8]"
       >
         <span>
-          {classManagement ? (
+          {TeacherAccount ? (
             <FaArrowDown></FaArrowDown>
           ) : (
             <FaArrowRight></FaArrowRight>
           )}
         </span>
-        <span>class Management </span>
+        <span>Accounts</span>
       </button>
-      {classManagement && (
+      {TeacherAccount && (
         <div className="">
           <Link href="/dashboard/add-class-group-section-shift">
             <button
@@ -36,17 +36,7 @@ const ClassManagement = () => {
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
               } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
-              Add Class, Group, <br /> Section, Shift
-            </button>
-          </Link>
-          <Link href="/dashboard/specify-group-section-shift-for-class">
-            <button
-              className={`${
-                pathName.includes("specify-group-section-shift-for-class") &&
-                "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-              } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
-            >
-              Specify- Group Section <br /> Shift For Class
+              Paid & Deu Salary
             </button>
           </Link>
         </div>
@@ -55,4 +45,4 @@ const ClassManagement = () => {
   );
 };
 
-export default ClassManagement;
+export default TeacherAccount;

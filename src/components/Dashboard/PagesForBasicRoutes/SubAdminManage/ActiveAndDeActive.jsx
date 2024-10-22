@@ -157,7 +157,7 @@ const ActiveAndDeActive = () => {
           <tbody>
             {data.map((row, index) => (
               <tr key={index} className="bg-white border-b">
-                <td className="px-[2px] border py-4">{row.name}</td>
+                <td className="px-[2px] border py-4 ">{row.name}</td>
                 <td className="px-[2px] border py-4">{row.designation}</td>
                 <td className="px-[2px] border py-4">{row.phone}</td>
                 <td className="px-[2px] border py-4">{row.email}</td>
