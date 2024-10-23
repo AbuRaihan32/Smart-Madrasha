@@ -70,10 +70,10 @@ const TeacherSetting = () => {
               Active & DeActive Teacher
             </button>
           </Link>
-          <Link href="#">
+          <Link href="/dashboard/teachers-and-staff/teacher-subject-assign">
             <button
               className={`${
-                pathName.includes("test") &&
+                pathName.includes("teacher-subject-assign") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
               } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
