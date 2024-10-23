@@ -38,7 +38,7 @@ const TeacherSubjectAssign = () => {
             id="teacher"
             value={selectedTeacher}
             onChange={(e) => setSelectedTeacher(e.target.value)}
-            className="w-full border px-3 py-2 rounded"
+            className="w-full border px-3 py-2 rounded outline-none"
           >
             <option value="">Select Teacher</option>
             <option value="মাওলানা আবু রায়হান মাহফুজ">
@@ -57,7 +57,7 @@ const TeacherSubjectAssign = () => {
             id="Class"
             value={selectedClass}
             onChange={(e) => setSelectedClass(e.target.value)}
-            className="w-full border px-3 py-2 rounded"
+            className="w-full border px-3 py-2 rounded outline-none"
           >
             <option value="">Select Class</option>
             <option value="ফযীলত ১ম বর্ষ (জালালাইন)">
