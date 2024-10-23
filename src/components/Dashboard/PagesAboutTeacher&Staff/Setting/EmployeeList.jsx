@@ -94,28 +94,43 @@ const EmployeeList = () => {
   return (
     <>
       <div className="bg-slate-50 mt-10 md:mt-8 p-3 pb-4 rounded-lg min-h-10 shadow-sm ">
-        <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
-          <form className="">
+        <div className="flex flex-col md:flex-row items-center space-x-3 space-y-3 md:space-y-0 text-[14px] sm:text-[16px]">
+          <div className="flex items-center px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+            <input
+              type="radio"
+              name="employeeType"
+              value="all employee"
+              className="mr-2"
+            />
+            <label className="mr-4">All Employee</label>
+            <input
+              type="radio"
+              name="employeeType"
+              value="teachers"
+              className="mr-2"
+            />
+            <label className="mr-4">Teachers</label>
+            <input
+              type="radio"
+              name="employeeType"
+              value="staff"
+              className="mr-2"
+            />
+            <label>Staff</label>
+          </div>
+          <div>
             <input
               type="text"
-              name="session year"
-              className="p-2 mr-4 border outline-0 rounded-md w-full md:w-[20%]  mb-2 md:mb-0"
-              placeholder="Enter Session Year"
+              placeholder="Enter Search Keyword"
+              className="px-3 py-2 border border-gray-300 rounded-md shadow-sm outline-none"
+              name="search-Key"
+              id=""
             />
-            <input
-              type="text"
-              name="start date"
-              className="p-2 mr-4 border outline-0 rounded-md w-full md:w-[20%]  mb-2 md:mb-0"
-              placeholder="Start Date"
-            />
-            <input
-              type="text"
-              name="end date"
-              className="p-2 mr-4 border outline-0 rounded-md w-full md:w-[20%]  mb-2 md:mb-0"
-              placeholder="End Date"
-            />
-            <Button text={"Submit"}></Button>
-          </form>
+          </div>
+          <div className="flex gap-3">
+            <Button text={"Find"}></Button>
+            <Button text={"PRINT"}></Button>
+          </div>
         </div>
       </div>
 
@@ -146,13 +161,45 @@ const EmployeeList = () => {
                       <CiEdit className="text-xl"></CiEdit>
                     </button>
                   </td>
-                  <td className="border p-2">{employee.id}</td>
+                  <td className="border p-2">
+                    <input
+                      type="text"
+                      defaultValue={employee.id}
+                      className="px-3 py-2 border border-gray-300 rounded-md shadow-sm outline-none w-16 text-center"
+                      name="search-Key"
+                      id=""
+                    />
+                  </td>
                   <td className="border p-2">{employee.name}</td>
                   <td className="border p-2">{employee.mobile}</td>
                   <td className="border p-2">{employee.designation}</td>
-                  <td className="border p-2">{employee.empType}</td>
-                  <td className="border p-2">{employee.salary}</td>
-                  <td className="border p-2">{employee.bankAcc}</td>
+                  <td className="border p-2">
+                    <input
+                      type="text"
+                      defaultValue={employee.empType}
+                      className="px-1 py-2 border border-gray-300 rounded-md shadow-sm outline-none w-20 text-center"
+                      name="search-Key"
+                      id=""
+                    />
+                  </td>
+                  <td className="border p-2">
+                    <input
+                      type="text"
+                      defaultValue={employee.salary}
+                      className="px-1 py-2 border border-gray-300 rounded-md shadow-sm outline-none w-20 text-center"
+                      name="search-Key"
+                      id=""
+                    />
+                  </td>
+                  <td className="border p-2">
+                    <input
+                      type="text"
+                      defaultValue={employee.bankAcc}
+                      className="px-1 py-2 border border-gray-300 rounded-md shadow-sm outline-none w-20 text-center"
+                      name="search-Key"
+                      id=""
+                    />
+                  </td>
                   <td className="border p-2">
                     <Image
                       src={"/final-profile.jpg"}
@@ -165,6 +212,9 @@ const EmployeeList = () => {
               ))}
             </tbody>
           </table>
+        </div>
+        <div className="mt-6">
+        <Button text={'Update'}></Button>
         </div>
       </div>
 
