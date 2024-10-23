@@ -51,7 +51,7 @@ const SubAdminManagement = () => {
           <Link href="/dashboard/basic-settings/active-deActive">
             <button
               className={`${
-                pathName.includes("active-deActive") &&
+                pathName.includes("/basic-settings/active-deActive") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
               } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
