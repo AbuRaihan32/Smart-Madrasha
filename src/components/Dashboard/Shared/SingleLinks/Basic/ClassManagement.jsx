@@ -29,7 +29,7 @@ const ClassManagement = () => {
       </button>
       {classManagement && (
         <div className="">
-          <Link href="/dashboard/add-class-group-section-shift">
+          <Link href="/dashboard/basic-settings/add-class-group-section-shift">
             <button
               className={`${
                 pathName.includes("add-class-group-section-shift") &&
@@ -39,7 +39,7 @@ const ClassManagement = () => {
               Add Class, Group, <br /> Section, Shift
             </button>
           </Link>
-          <Link href="/dashboard/specify-group-section-shift-for-class">
+          <Link href="/dashboard/basic-settings/specify-group-section-shift-for-class">
             <button
               className={`${
                 pathName.includes("specify-group-section-shift-for-class") &&

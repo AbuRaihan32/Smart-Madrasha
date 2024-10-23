@@ -24,7 +24,7 @@ const Others = () => {
       </button>
       {Others && (
         <div className="">
-          <Link href="/dashboard/add_all_subjects">
+          <Link href="/dashboard/basic-settings/add_all_subjects">
             <button
               className={`${
                 pathName.includes("add_all_subjects") &&
@@ -34,7 +34,7 @@ const Others = () => {
               Add All Subject
             </button>
           </Link>
-          <Link href="/dashboard/manage-session">
+          <Link href="/dashboard/basic-settings/manage-session">
             <button
               className={`${
                 pathName.includes("manage-session") &&
@@ -44,7 +44,7 @@ const Others = () => {
               Manage Session
             </button>
           </Link>
-          <Link href="/dashboard/institution-info">
+          <Link href="/dashboard/basic-settings/institution-info">
             <button
               className={`${
                 pathName.includes("institution-info") &&

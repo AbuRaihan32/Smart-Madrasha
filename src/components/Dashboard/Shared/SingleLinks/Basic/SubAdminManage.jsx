@@ -28,7 +28,7 @@ const SubAdminManagement = () => {
       </button>
       {SubAdminManage && (
         <div className="">
-          <Link href="/dashboard/create-sub-admin">
+          <Link href="/dashboard/basic-settings/create-sub-admin">
             <button
               className={`${
                 pathName.includes("create-sub-admin") &&
@@ -38,7 +38,7 @@ const SubAdminManagement = () => {
               Create Sub Admin
             </button>
           </Link>
-          <Link href="/dashboard/manage-page-access">
+          <Link href="/dashboard/basic-settings/manage-page-access">
             <button
               className={`${
                 pathName.includes("manage-page-access") &&
@@ -48,7 +48,7 @@ const SubAdminManagement = () => {
               Manage Page Access
             </button>
           </Link>
-          <Link href="/dashboard/active-deActive">
+          <Link href="/dashboard/basic-settings/active-deActive">
             <button
               className={`${
                 pathName.includes("active-deActive") &&

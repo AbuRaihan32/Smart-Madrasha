@@ -1,6 +1,6 @@
 import React from "react";
 
-const ActiveAndDeActive = () => {
+const ActiveDeActiveTeacher = () => {
   const data = [
     {
       name: "আবু সুফিয়ান",
@@ -189,4 +189,4 @@ const ActiveAndDeActive = () => {
   );
 };
 
-export default ActiveAndDeActive;
+export default ActiveDeActiveTeacher;

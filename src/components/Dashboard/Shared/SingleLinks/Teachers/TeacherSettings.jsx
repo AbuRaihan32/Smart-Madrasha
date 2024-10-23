@@ -29,7 +29,7 @@ const TeacherSetting = () => {
       </button>
       {TeacherSetting && (
         <div className="">
-          <Link href="/dashboard/add-teacher">
+          <Link href="/dashboard/teachers-and-staff/add-teacher">
             <button
               className={`${
                 pathName.includes("add-teacher") &&
@@ -40,7 +40,7 @@ const TeacherSetting = () => {
             </button>
           </Link>
 
-          <Link href="/dashboard/add-staff">
+          <Link href="/dashboard/teachers-and-staff/add-staff">
             <button
               className={`${
                 pathName.includes("add-staff") &&
@@ -50,7 +50,7 @@ const TeacherSetting = () => {
               Add Staff
             </button>
           </Link>
-          <Link href="/dashboard/employee-list">
+          <Link href="/dashboard/teachers-and-staff/employee-list">
             <button
               className={`${
                 pathName.includes("employee-list") &&
@@ -60,10 +60,10 @@ const TeacherSetting = () => {
               Employee List
             </button>
           </Link>
-          <Link href="#">
+          <Link href="/dashboard/teachers-and-staff/active-deActive-teacher">
             <button
               className={`${
-                pathName.includes("test") &&
+                pathName.includes("active-deActive-teacher") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
               } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
