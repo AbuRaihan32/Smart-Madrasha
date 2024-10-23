@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/components/Shared/Button";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { useForm } from "react-hook-form";
@@ -93,7 +94,33 @@ const EmployeeList = () => {
   return (
     <>
       <div className="bg-slate-50 mt-10 md:mt-8 p-3 pb-4 rounded-lg min-h-10 shadow-sm ">
-        <div className=" overflow-x-scroll">
+        <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
+          <form className="">
+            <input
+              type="text"
+              name="session year"
+              className="p-2 mr-4 border outline-0 rounded-md w-full md:w-[20%]  mb-2 md:mb-0"
+              placeholder="Enter Session Year"
+            />
+            <input
+              type="text"
+              name="start date"
+              className="p-2 mr-4 border outline-0 rounded-md w-full md:w-[20%]  mb-2 md:mb-0"
+              placeholder="Start Date"
+            />
+            <input
+              type="text"
+              name="end date"
+              className="p-2 mr-4 border outline-0 rounded-md w-full md:w-[20%]  mb-2 md:mb-0"
+              placeholder="End Date"
+            />
+            <Button text={"Submit"}></Button>
+          </form>
+        </div>
+      </div>
+
+      <div className="bg-slate-50 mt-10 md:mt-8 p-3 pb-4 rounded-lg min-h-10 shadow-sm ">
+        <div className=" overflow-x-auto">
           <table className="table-auto  w-full border-collapse border border-gray-300">
             <thead>
               <tr className="bg-gray-100">
