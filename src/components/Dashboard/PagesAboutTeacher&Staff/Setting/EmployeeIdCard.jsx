@@ -36,7 +36,7 @@ const EmployeeIdCard = () => {
           <strong>Class:</strong> 14 Sec: A Roll: 25
         </p>
         <p>
-          <strong>Fathers Name:</strong> Mr. Sameer Mehra
+          <strong>Fathers Name:</strong> The Name
         </p>
         <p>
           <strong>Date of Birth:</strong> 12/02/2012
