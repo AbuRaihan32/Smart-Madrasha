@@ -3,8 +3,10 @@ import React, { useEffect, useState } from "react";
 import Not from "../../public/LottieJson/NotFound.json";
 import Lottie from "lottie-react";
 import Button from "@/components/Shared/Button";
+import { useRouter } from "next/navigation";
 
 const ErrorPage = () => {
+  const router = useRouter();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -23,7 +25,9 @@ const ErrorPage = () => {
       <div className="relative">
         <Lottie animationData={Not}></Lottie>
         <div className="absolute top-[80%] right-[40%]">
-          <Button text={"Go To Home"} link={"/"}></Button>
+          <div onClick={() => router.back()}>
+            <Button text={"Go Back"}></Button>
+          </div>
         </div>
       </div>
     </div>
