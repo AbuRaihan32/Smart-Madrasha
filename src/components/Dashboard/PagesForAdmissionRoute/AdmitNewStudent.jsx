@@ -5,9 +5,9 @@ const AdmitNewStudent = () => {
     <div className="bg-white mt-6 md:mx-5 md:my-5 p-5 rounded-lg min-h-10 shadow-sm">
       <form>
         <div className="mb-4">
-          <h2 className="text-lg font-bold bg-slate-200 p-2 rounded-md">
+          <h2 className="text-[16px] sm:text-lg font-bold bg-slate-200 p-2 rounded-md">
             Student Information
-            <span className="text-sm bg-blue-700 ml-3 text-white p-1 rounded-md">Last Entry ID 181083</span>
+            <span className="text-xs sm:text-sm bg-blue-700 ml-3 text-white p-1 rounded-md">Last Entry ID 181083</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <label>
@@ -101,7 +101,7 @@ const AdmitNewStudent = () => {
               />
             </label>
           </div>
-          <div className="flex gap-4 mt-4">
+          <div className="flex flex-col md:flex-row gap-4 mt-4">
             <label className="w-full">
               Students Permanent Address
               <textarea
@@ -176,7 +176,7 @@ const AdmitNewStudent = () => {
         </div>
 
         <div className="rounded mt-10">
-          <h2 className="text-lg font-bold bg-green-100 p-2 rounded-md">
+          <h2 className="text-[15px] sm:text-lg font-bold bg-green-100 p-2 rounded-md">
             Previous Institution Information (If Any)
           </h2>
           <div className="mt-4">
@@ -227,7 +227,7 @@ const AdmitNewStudent = () => {
         </div>
 
         <div className=" rounded mt-10">
-          <h2 className="text-lg font-bold bg-gray-100 p-2 rounded-md">
+          <h2 className="text-[15px] sm:text-lg font-bold bg-gray-100 p-2 rounded-md">
             Second Guardian Information (Optional)
           </h2>
           <div className="mt-4">
