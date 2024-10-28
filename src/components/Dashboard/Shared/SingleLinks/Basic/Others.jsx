@@ -29,7 +29,7 @@ const Others = () => {
               className={`${
                 pathName.includes("add_all_subjects") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-              } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
+              } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
               Add All Subject
             </button>
@@ -39,7 +39,7 @@ const Others = () => {
               className={`${
                 pathName.includes("manage-session") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-              } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
+              } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
               Manage Session
             </button>
@@ -49,7 +49,7 @@ const Others = () => {
               className={`${
                 pathName.includes("institution-info") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-              } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
+              } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
               Institution Info
             </button>

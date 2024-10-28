@@ -1,7 +1,10 @@
 "use client";
-import React, { useState } from "react";
+
+import Button from "@/components/Shared/Button";
+import { useState } from "react";
 
 const PaidAndDueSalary = () => {
+  const [payRole, setPayRole] = useState("");
   const data = [
     {
       id: "0001",
@@ -102,98 +105,70 @@ const PaidAndDueSalary = () => {
     // আরও ডাটা এখানে যোগ করুন
   ];
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const rowsPerPage = 10;
-  const totalPages = Math.ceil(data.length / rowsPerPage);
-
-  const handlePrevious = () => {
-    if (currentPage > 1) setCurrentPage(currentPage - 1);
+  const handlePayRoleSubmitBtn = (e) => {
+    e.preventDefault();
+    setPayRole(e.target.payRole.value);
   };
-
-  const handleNext = () => {
-    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
-  };
-
-  const handleRefresh = () => {
-    window.location.reload();
-  };
-
-  const currentData = data.slice(
-    (currentPage - 1) * rowsPerPage,
-    currentPage * rowsPerPage
-  );
 
   return (
     <div className="p-4">
-      {/* Navigation */}
-      <div className="flex justify-end gap-3 items-center mb-2">
-        <button
-          onClick={handleRefresh}
-          className="p-2 bg-blue-500 text-white rounded"
-        >
-          🔄 Refresh
-        </button>
-        <div>
-          <button
-            onClick={handlePrevious}
-            disabled={currentPage === 1}
-            className="p-2 bg-gray-300 text-gray-700 rounded mr-2"
+      <div className="bg-slate-50 mt-10 md:mt-5 p-3 pb-4 rounded-lg min-h-10 shadow-sm ">
+        <form onSubmit={handlePayRoleSubmitBtn} className="flex gap-5">
+          <select
+            name="payRole"
+            id=""
+            className="px-3 py-2 border border-gray-300 rounded-md shadow-sm outline-none"
           >
-            Previous
-          </button>
-          <span>
-            Page {currentPage} of {totalPages}
-          </span>
-          <button
-            onClick={handleNext}
-            disabled={currentPage === totalPages}
-            className="p-2 bg-gray-300 text-gray-700 rounded ml-2"
-          >
-            Next
-          </button>
-        </div>
+            <option value=""> Select Payment Role </option>
+            <option value="মাসিক বেতন"> মাসিক বেতন </option>
+          </select>
+
+          <Button text={"Submit"}></Button>
+        </form>
       </div>
 
       {/* Responsive Table */}
-      <div className="overflow-x-auto">
-        <div className="min-w-full bg-white shadow-md rounded-lg">
-          <table className="min-w-full text-xs md:text-sm lg:text-base">
-            <thead>
-              <tr className="bg-[#0098A8] text-white">
-                <th className="p-2 border">ID</th>
-                <th className="p-2 border">Name</th>
-                <th className="p-2 border">Apr 2024</th>
-                <th className="p-2 border">May 2024</th>
-                <th className="p-2 border">Jun 2024</th>
-                <th className="p-2 border">Jul 2024</th>
-                <th className="p-2 border">Aug 2024</th>
-                <th className="p-2 border">Sep 2024</th>
-                <th className="p-2 border">Paid</th>
-                <th className="p-2 border">Due</th>
-              </tr>
-            </thead>
-            <tbody>
-              {currentData.map((row, index) => (
-                <tr
-                  key={index}
-                  className="text-center bg-white even:bg-gray-100"
-                >
-                  <td className="p-2 border">{row.id}</td>
-                  <td className="p-2 border">{row.name}</td>
-                  <td className="p-2 border">{row.Apr}</td>
-                  <td className="p-2 border">{row.May}</td>
-                  <td className="p-2 border">{row.Jun}</td>
-                  <td className="p-2 border">{row.Jul}</td>
-                  <td className="p-2 border">{row.Aug}</td>
-                  <td className="p-2 border">{row.Sep}</td>
-                  <td className="p-2 border">{row.Paid}</td>
-                  <td className="p-2 border">{row.Due}</td>
+      {payRole && (
+        <div className="overflow-x-auto bg-slate-50 mt-4 p-3 pb-4 rounded-lg min-h-10 shadow-sm ">
+          <div className="min-w-full bg-white shadow-md rounded-lg">
+            <table className="min-w-full text-xs md:text-sm lg:text-base">
+              <thead>
+                <tr className="bg-[#0098A8] text-white">
+                  <th className="p-2 border">ID</th>
+                  <th className="p-2 border">Name</th>
+                  <th className="p-2 border">Apr 2024</th>
+                  <th className="p-2 border">May 2024</th>
+                  <th className="p-2 border">Jun 2024</th>
+                  <th className="p-2 border">Jul 2024</th>
+                  <th className="p-2 border">Aug 2024</th>
+                  <th className="p-2 border">Sep 2024</th>
+                  <th className="p-2 border">Paid</th>
+                  <th className="p-2 border">Due</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {data.map((row, index) => (
+                  <tr
+                    key={index}
+                    className="text-center bg-white even:bg-gray-100"
+                  >
+                    <td className="p-2 border">{row.id}</td>
+                    <td className="p-2 border">{row.name}</td>
+                    <td className="p-2 border">{row.Apr}</td>
+                    <td className="p-2 border">{row.May}</td>
+                    <td className="p-2 border">{row.Jun}</td>
+                    <td className="p-2 border">{row.Jul}</td>
+                    <td className="p-2 border">{row.Aug}</td>
+                    <td className="p-2 border">{row.Sep}</td>
+                    <td className="p-2 border">{row.Paid}</td>
+                    <td className="p-2 border">{row.Due}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

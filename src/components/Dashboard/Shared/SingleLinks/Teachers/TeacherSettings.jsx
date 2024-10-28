@@ -31,9 +31,10 @@ const TeacherSetting = () => {
         <div className="">
           <Link href="/dashboard/teachers-and-staff/add-teacher">
             <button
-              className={`${pathName.includes("add-teacher") &&
+              className={`${
+                pathName.includes("add-teacher") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-                } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
+              } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
               Add Teacher
             </button>
@@ -41,45 +42,50 @@ const TeacherSetting = () => {
 
           <Link href="/dashboard/teachers-and-staff/add-staff">
             <button
-              className={`${pathName.includes("add-staff") &&
+              className={`${
+                pathName.includes("add-staff") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-                } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
+              } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
               Add Staff
             </button>
           </Link>
           <Link href="/dashboard/teachers-and-staff/employee-list">
             <button
-              className={`${pathName.includes("employee-list") &&
+              className={`${
+                pathName.includes("employee-list") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-                } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
+              } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
               Employee List
             </button>
           </Link>
           <Link href="/dashboard/teachers-and-staff/active-deActive-teacher">
             <button
-              className={`${pathName.includes("active-deActive-teacher") &&
+              className={`${
+                pathName.includes("active-deActive-teacher") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-                } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
+              } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
               Active & DeActive Teacher
             </button>
           </Link>
           <Link href="/dashboard/teachers-and-staff/teacher-subject-assign">
             <button
-              className={`${pathName.includes("teacher-subject-assign") &&
+              className={`${
+                pathName.includes("teacher-subject-assign") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-                } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
+              } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
               Teacher Subject Assign
             </button>
           </Link>
           <Link href="/dashboard/teachers-and-staff/employee-id-card">
             <button
-              className={`${pathName.includes("employee-id-card") &&
+              className={`${
+                pathName.includes("employee-id-card") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
-                } pl-5 text-start w-full text-[#C9E7ED] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
+              } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
               Employee ID Card
             </button>
