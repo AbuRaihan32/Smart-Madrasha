@@ -39,10 +39,10 @@ const Admission = () => {
               Admit New Student
             </button>
           </Link>
-          <Link href="#">
+          <Link href="/dashboard/admission/single-re-admition">
             <button
               className={`${
-                pathName.includes("add-class-group-section-shift") &&
+                pathName.includes("single-re-admition") &&
                 "bg-[#051416]  border-r-[4px] border-r-[#0098A8]"
               } pl-5 text-start w-full text-[#2fd0e2] space-x-3 p-2 hover:bg-[#051416]  hover:border-r-[4px] hover:border-r-[#0098A8] border-t border-b border-t-[#05171a] border-b-[#0b3236] `}
             >
