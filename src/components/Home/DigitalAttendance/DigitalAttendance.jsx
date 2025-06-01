@@ -2,7 +2,7 @@ import LottieFile from "@/components/Shared/LottieFile";
 import React from "react";
 import { FaBell } from "react-icons/fa";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import Att from "../../../../public/LottieJson/Attendance.json";
+import Att from "../../../assets/Attendance.json";
 
 const DigitalAttendance = () => {
   return (

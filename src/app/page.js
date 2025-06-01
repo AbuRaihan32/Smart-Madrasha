@@ -1,3 +1,4 @@
+"use client"
 import Account from "@/components/Home/Account/Account";
 import Banner from "@/components/Home/Banner/Banner";
 import Location from "@/components/Home/Contact/Location";
@@ -7,7 +8,7 @@ import Exam from "@/components/Home/Exam/Exam";
 import Overview from "@/components/Home/Overview/Overview";
 import StudentReport from "@/components/Home/StudentReport/StudentReport";
 import Testimonials from "@/components/Home/Testimonials/Testimonials";
-import ScrollToTopButton from "@/components/Shared/ScrollToTopButton";
+// import ScrollToTopButton from "@/components/Shared/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         <Location></Location>
         <Message></Message>
       </div>
-      <ScrollToTopButton></ScrollToTopButton>
+      {/* <ScrollToTopButton></ScrollToTopButton> */}
     </div>
   );
 }

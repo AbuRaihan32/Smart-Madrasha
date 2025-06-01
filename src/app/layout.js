@@ -12,7 +12,7 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata = {
-  title: "Biddyanoy",
+  title: "Smart Madrasha",
   description: "Educational institution management service",
 };
 

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Sessions from "../../../../../public/Temporary/Session.json";
+import Sessions from "../../../../assets/Session.json";
 import SessionsRow from "./SessionsRow";
 import Button from "@/components/Shared/Button";
 

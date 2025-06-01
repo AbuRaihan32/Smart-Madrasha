@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import allSubjects from "../../../../../public/Temporary/allSubjects.json";
+import allSubjects from "../../../../assets/allSubjects.json";
 import AllSubjectsRow from "./AllSubjectsRow";
 import Button from "@/components/Shared/Button";
 

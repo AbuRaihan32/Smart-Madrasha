@@ -1,6 +1,6 @@
 import { MdOutlineMenuBook } from "react-icons/md";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import exam from "../../../../public/LottieJson/Exam.json";
+import exam from "../../../assets/Exam.json";
 import LottieFile from "@/components/Shared/LottieFile";
 
 const Exam = () => {
